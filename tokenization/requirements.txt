@@ -1,0 +1,8 @@
+torch==1.4.0
+torchtext==0.6.0
+pandas==1.0.3
+spacy==2.2.4
+sacremoses==0.0.43
+nltk==3.5
+revtok==0.0.3
+tokenizers==0.7.0
