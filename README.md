@@ -13,7 +13,6 @@
 The process of converting textual data to tokens, is one of the most important step in NLP. Tokenization using the following methods has been explored:
 
 - [Spacy](https://spacy.io/usage/linguistic-features#tokenization)
-- [NLTK](https://www.nltk.org/api/nltk.tokenize.html)
 - [Byte Pair Encoding (Sentencepiece)](https://github.com/google/sentencepiece)
 - [Unigram Encoding (Sentencepiece)](https://github.com/google/sentencepiece)
 - [Torchtext](https://pytorch.org/text/data_utils.html)
