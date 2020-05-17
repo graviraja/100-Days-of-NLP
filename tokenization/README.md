@@ -45,9 +45,7 @@ First, the raw text is split on whitespace characters, similar to text.split(' '
 
 We can customize the tokenizer by adding our rules and conditions. Checkout the documentation for more details [here](https://spacy.io/usage/linguistic-features#native-tokenizers)
 
-#### 2. nltk_tokenization.py: Tokenization using nltk library
-
-#### 3. bpe_tokenization.py: Tokenization using [Byte-Pair Encoding](https://arxiv.org/abs/1508.07909) algorithm.
+#### 2. bpe_tokenization.py: Tokenization using [Byte-Pair Encoding](https://arxiv.org/abs/1508.07909) algorithm.
 
 Byte Pair Encoding (BPE) or diagram coding is a simple form of data compression in which the most common pair of consecutive bytes of data is replaced with a byte that does not occur within that data. 
 
@@ -55,21 +53,21 @@ Byte Pair Encoding (BPE) or diagram coding is a simple form of data compression 
 
 Training is required to create BPE tokenizer. This [repo](https://github.com/bheinzerling/bpemb) contains pretrained BPE in 275 languages.
 
-#### 4. unigram_tokenization.py: Tokenization using [Unigram Language Modeling](https://arxiv.org/pdf/1804.10959.pdf) algorithm.
+#### 3. unigram_tokenization.py: Tokenization using [Unigram Language Modeling](https://arxiv.org/pdf/1804.10959.pdf) algorithm.
 
 The basic idea of this tokenizer is to train a unigram language model, assuming all words occur independent of each other. It then uses this model to find the most likely segmentation of each word. The advantage of this method is that it uses a probabilistic model underneath, meaning in addition to finding the most likely segmentation, you can sample segmentations from a probability distribution.
 
 ![uni_code](../assets/images/tokenization/unigram.png)
 
 
-#### 5: torchtext_tokenization.py: Usage of torchtext library for tokenization.
+#### 4: torchtext_tokenization.py: Usage of torchtext library for tokenization.
 
 Torchtext is a pytorch based package which consists of data processing utilities and popular datasets for natural language. We can configure the tokenizer with existing tokenization approaches like spacy, moses, subword, etc. (or) provide our own custom tokenizer.
 
 ![torchtext](../assets/images/tokenization/torchtext.png)
 
 
-#### 6: tokenizers_tokenization.py: Using Huggingface's [tokenizers](https://github.com/huggingface/tokenizers) library for tokenization
+#### 5: tokenizers_tokenization.py: Using Huggingface's [tokenizers](https://github.com/huggingface/tokenizers) library for tokenization
 
 Provides an implementation of today's most used tokenizers, with a focus on performance and versatility.
 
@@ -82,6 +80,9 @@ The PreTokenizer: in charge of creating initial words splits in the text. The mo
 The Model: in charge of doing the actual tokenization. An example of a Model would be BPE or WordPiece.
 
 The PostProcessor: in charge of post-processing the Encoding to add anything relevant that, for example, a language model would need, such as special tokens.
+
+![tokenizers](../assets/images/tokenization/tokenizers.png)
+
 
 ### References
 
