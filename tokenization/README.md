@@ -55,6 +55,8 @@ Byte Pair Encoding (BPE) or diagram coding is a simple form of data compression 
 
 The basic idea of this tokenizer is to train a unigram language model, assuming all words occur independent of each other. It then uses this model to find the most likely segmentation of each word. The advantage of this method is that it uses a probabilistic model underneath, meaning in addition to finding the most likely segmentation, you can sample segmentations from a probability distribution.
 
+![uni_code](../assets/images/tokenization/unigram.png)
+
 
 #### 5: torchtext_tokenization.py: Usage of torchtext library for tokenization.
 
@@ -82,7 +84,6 @@ The PostProcessor: in charge of post-processing the Encoding to add anything rel
 - [Spacy Tokenization](https://spacy.io/usage/linguistic-features#tokenization)
 
 - [Nltk Tokenization](https://www.nltk.org/api/nltk.tokenize.html)
-
 
 - [Keras Tokenization](https://keras.io/api/preprocessing/text/)
 
