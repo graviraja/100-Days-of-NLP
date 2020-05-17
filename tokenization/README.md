@@ -53,6 +53,7 @@ Byte Pair Encoding (BPE) or diagram coding is a simple form of data compression 
 
 ![bpe_code](../assets/images/tokenization/bpe.png)
 
+Training is required to create BPE tokenizer. This [repo](https://github.com/bheinzerling/bpemb) contains pretrained BPE in 275 languages.
 
 #### 4. unigram_tokenization.py: Tokenization using [Unigram Language Modeling](https://arxiv.org/pdf/1804.10959.pdf) algorithm.
 

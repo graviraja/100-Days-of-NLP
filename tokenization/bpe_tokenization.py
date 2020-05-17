@@ -4,11 +4,11 @@ import sentencepiece as spm
 DATAFILE = '../data/pg16457.txt'
 MODELDIR = 'models'
 
-# spm.SentencePieceTrainer.train(f'''\
-#     --model_type=bpe\
-#     --input={DATAFILE}\
-#     --model_prefix={MODELDIR}/bpe\
-#     --vocab_size=500''')
+spm.SentencePieceTrainer.train(f'''\
+    --model_type=bpe\
+    --input={DATAFILE}\
+    --model_prefix={MODELDIR}/bpe\
+    --vocab_size=500''')
 
 sp = spm.SentencePieceProcessor()
 sp.load(os.path.join(MODELDIR, 'bpe.model'))
