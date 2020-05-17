@@ -1,4 +1,4 @@
-<h1 align="center" style="font-size:40px">
+<h1 align="center" style="font-size:80px">
     Tokenization in NLP
 </h1>
 
@@ -50,6 +50,9 @@ We can customize the tokenizer by adding our rules and conditions. Checkout the 
 #### 3. bpe_tokenization.py: Tokenization using [Byte-Pair Encoding](https://arxiv.org/abs/1508.07909) algorithm.
 
 Byte Pair Encoding (BPE) or diagram coding is a simple form of data compression in which the most common pair of consecutive bytes of data is replaced with a byte that does not occur within that data. 
+
+![bpe_code](../assets/images/tokenization/bpe.png)
+
 
 #### 4. unigram_tokenization.py: Tokenization using [Unigram Language Modeling](https://arxiv.org/pdf/1804.10959.pdf) algorithm.
 

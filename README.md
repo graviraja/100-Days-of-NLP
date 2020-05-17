@@ -1,4 +1,4 @@
-<h1 align="center" style="font-size:40px">
+<h1 align="center" style="font-size:80px">
     100 Days of NLP
 </h1>
 
