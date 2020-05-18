@@ -6,9 +6,10 @@
 
 **Note: Please raise an issue for any suggestions, corrections, and feedback.**
 
-## Day 1
+## Tokenization in NLP
 
-### Tokenization in NLP
+### Day 1
+
 
 The process of converting textual data to tokens, is one of the most important step in NLP. Tokenization using the following methods has been explored:
 
@@ -17,3 +18,18 @@ The process of converting textual data to tokens, is one of the most important s
 - [Unigram Encoding (Sentencepiece)](https://github.com/google/sentencepiece)
 - [Torchtext](https://pytorch.org/text/data_utils.html)
 - [Tokenizers](https://github.com/huggingface/tokenizers)
+
+Checkout the code in `Tokenization` folder
+
+## Word Embeddings
+
+A word embedding is a learned representation for text where words that have the same meaning have a similar representation. It is this approach to representing words and documents that may be considered one of the key breakthroughs of deep learning on challenging natural language processing problems.
+
+## Day 2: Word2Vec
+
+Word2Vec is one of the most popular pretrained word embeddings developed by Google. Depending on the way the embeddings are learned, Word2Vec is classified into two approaches:
+
+- Continuous Bag-of-Words (CBOW)
+- Skip-gram model
+
+Checkout the code in `Embeddings` folder
