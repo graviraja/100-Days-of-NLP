@@ -19,17 +19,25 @@ The process of converting textual data to tokens, is one of the most important s
 - [Torchtext](https://pytorch.org/text/data_utils.html)
 - [Tokenizers](https://github.com/huggingface/tokenizers)
 
-Checkout the code in `Tokenization` folder
+Checkout the code in `tokenization` folder
 
 ## Word Embeddings
 
 A word embedding is a learned representation for text where words that have the same meaning have a similar representation. It is this approach to representing words and documents that may be considered one of the key breakthroughs of deep learning on challenging natural language processing problems.
 
-## Day 2: Word2Vec
+### Day 2: Word2Vec
 
 Word2Vec is one of the most popular pretrained word embeddings developed by Google. Depending on the way the embeddings are learned, Word2Vec is classified into two approaches:
 
 - Continuous Bag-of-Words (CBOW)
 - Skip-gram model
 
-Checkout the code in `Embeddings` folder
+### Day 3: GloVe
+
+GloVe is another commonly used method of obtaining pre-trained embeddings. GloVe aims to achieve two goals:
+
+- Create word vectors that capture meaning in vector space
+- Takes advantage of global count statistics instead of only local information
+
+
+Checkout the code in `embeddings` folder
