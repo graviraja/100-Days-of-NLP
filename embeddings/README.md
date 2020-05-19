@@ -2,7 +2,7 @@
     Word Embeddings
 </h1>
 
-**Note: This is not a comprehensive list of tokenization methods. There may be even more ways to do the tokenization process, I am providing the most generally used methods. Please feel free to provide feedback (or) suggesting other ways.**
+**Note: This is not a comprehensive list of embedding methods. There may be even more ways to do the embedding, I am providing the most generally used methods. Please feel free to provide feedback (or) suggesting other ways.**
 
 There are a lot of online material available to explain the concept about Word Embeddings. I can't explain any better than that. So my focus here will be on, how to use the various word embeddings in code. For each concept, I will provide the abstract and relevant resources to look into more details.
 
