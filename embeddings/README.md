@@ -60,4 +60,25 @@ Resources:
 - [Colyer blog on GloVe](https://blog.acolyer.org/2016/04/22/glove-global-vectors-for-word-representation/)
 - [Code and Pretrained Embeddings](https://nlp.stanford.edu/projects/glove/)
 - [Stanford Lecture](https://www.youtube.com/watch?v=ASn7ExxLZws)
-- [GloVe Paper](https://www-nlp.stanford.edu/pubs/glove.pdf) 
+- [GloVe Paper](https://www-nlp.stanford.edu/pubs/glove.pdf)
+
+### 3. ELMo.ipynb: How to use ELMo (Embeddings from Language Models) Embeddings.
+
+ELMo is a deep contextualized word representation that models:
+
+- complex characteristics of word use (e.g., syntax and semantics)
+- how these uses vary across linguistic contexts (i.e., to model polysemy).
+
+These word vectors are learned functions of the internal states of a deep bidirectional language model (biLM), which is pre-trained on a large text corpus.
+
+![elmo arch](../assets/images/embeddings/elmo.png)
+
+**Difference between ELMo and Word2Vec/GloVe Embeddings**
+
+**ELMo Embeddings are context dependent**
+
+For instance, for the same example above “He went to the prison cell with his cell phone to extract blood cell samples from inmates”, both Elmo and BERT would generate different vectors for the three vectors for cell. The first cell (prison cell case) , for instance would be closer to words like incarceration, crime etc. whereas the second “cell” (phone case) would be closer to words like iphone, android, galaxy etc..
+
+**Word2Vec/GloVe Embeddings are not context dependent**
+
+That is the one numeric representation of a word (which we call embedding/vector) regardless of where the words occurs in a sentence and regardless of the different meanings they may have. For instance, after we train word2vec/Glove on a corpus (unsupervised training - no labels needed) we get as output one vector representation for, say the word “cell”. So even if we had a sentence like “He went to the prison cell with his cell phone to extract blood cell samples from inmates”, where the word cell has different meanings based on the sentence context, these models just collapse them all into one vector for “cell” in their output.
