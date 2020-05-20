@@ -25,6 +25,8 @@ Checkout the code in `tokenization` folder
 
 A word embedding is a learned representation for text where words that have the same meaning have a similar representation. It is this approach to representing words and documents that may be considered one of the key breakthroughs of deep learning on challenging natural language processing problems.
 
+![emb](assets/images/embeddings/embeddings.png)
+
 ### Day 2: Word2Vec
 
 Word2Vec is one of the most popular pretrained word embeddings developed by Google. Depending on the way the embeddings are learned, Word2Vec is classified into two approaches:

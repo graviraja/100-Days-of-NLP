@@ -6,6 +6,7 @@
 
 There are a lot of online material available to explain the concept about Word Embeddings. I can't explain any better than that. So my focus here will be on, how to use the various word embeddings in code. For each concept, I will provide the abstract and relevant resources to look into more details.
 
+![emb](../assets/images/embeddings/embeddings.png)
 
 ### 1. Word2Vec.ipynb: How to use Word2Vec Embeddings.
 
@@ -26,6 +27,9 @@ Continuous Bag-of-Words (CBOW) model learns the focus word given the neighboring
 ![word2vec arch](../assets/images/embeddings/word2vec.png)
 
 Resources:
+
+- [Illustrated Word2vec - Jay Alammar](http://jalammar.github.io/illustrated-word2vec/)
+- [Intuition & Uses-cases of Embeddings in NLP](https://www.youtube.com/watch?v=4-QoMdSqG_I)
 - [Word Embeddings - Sebastian Ruder](https://ruder.io/word-embeddings-1/)
 - [Skip Gram Model - Chris McCormick](http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/)
 - [Learning Word Embeddings Andrew NG](https://www.youtube.com/watch?v=xtPXjvwCt64)
