@@ -41,5 +41,14 @@ GloVe is another commonly used method of obtaining pre-trained embeddings. GloVe
 - Create word vectors that capture meaning in vector space
 - Takes advantage of global count statistics instead of only local information
 
+### Day 4: ELMo
+
+ELMo is a deep contextualized word representation that models:
+
+- complex characteristics of word use (e.g., syntax and semantics)
+- how these uses vary across linguistic contexts (i.e., to model polysemy).
+
+These word vectors are learned functions of the internal states of a deep bidirectional language model (biLM), which is pre-trained on a large text corpus.
+
 
 Checkout the code in `embeddings` folder
