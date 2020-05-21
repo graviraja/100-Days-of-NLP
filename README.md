@@ -1,6 +1,6 @@
-<h1 align="center" style="font-size:80px">
-    100 Days of NLP
-</h1>
+
+![emb](assets/images/embeddings/header.png)
+
 
  > There is nothing magic about magic. The magician merely understands something simple which doesn’t appear to be simple or natural to the untrained audience. Once you learn how to hold a card while making your hand look empty, you only need practice before you, too, can “do magic.” – Jeffrey Friedl in the book Mastering Regular Expressions
 
@@ -10,7 +10,7 @@
     Building Blocks of NLP
 </h1>
 
-# Tokenization
+## Tokenization
 
 ### Day 1
 
@@ -25,7 +25,7 @@ The process of converting textual data to tokens, is one of the most important s
 
 Checkout the code in `tokenization` folder
 
-# Word Embeddings
+## Word Embeddings
 
 A word embedding is a learned representation for text where words that have the same meaning have a similar representation. It is this approach to representing words and documents that may be considered one of the key breakthroughs of deep learning on challenging natural language processing problems.
 
