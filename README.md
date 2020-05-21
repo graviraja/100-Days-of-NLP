@@ -6,7 +6,11 @@
 
 **Note: Please raise an issue for any suggestions, corrections, and feedback.**
 
-## Tokenization in NLP
+<h1 align="center" style="font-size:60px">
+    Building Blocks of NLP
+</h1>
+
+# Tokenization
 
 ### Day 1
 
@@ -21,7 +25,7 @@ The process of converting textual data to tokens, is one of the most important s
 
 Checkout the code in `tokenization` folder
 
-## Word Embeddings
+# Word Embeddings
 
 A word embedding is a learned representation for text where words that have the same meaning have a similar representation. It is this approach to representing words and documents that may be considered one of the key breakthroughs of deep learning on challenging natural language processing problems.
 
@@ -52,3 +56,9 @@ These word vectors are learned functions of the internal states of a deep bidire
 
 
 Checkout the code in `embeddings` folder
+
+<h1 align="center" style="font-size:60px">
+    Applications of NLP
+</h1>
+
+There are many kinds of NLP problems like chatbots, sentiment classification, machine translation, document classification, named entity recognition, text summarization, natural language inference, information retrieval, image captioning, emotion recognition, recommendation systems, and many others. Here, I will try to work on some of the problems in NLP.
