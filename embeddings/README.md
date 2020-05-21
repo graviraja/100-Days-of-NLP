@@ -82,3 +82,14 @@ For instance, for the same example above “He went to the prison cell with his 
 **Word2Vec/GloVe Embeddings are not context dependent**
 
 That is the one numeric representation of a word (which we call embedding/vector) regardless of where the words occurs in a sentence and regardless of the different meanings they may have. For instance, after we train word2vec/Glove on a corpus (unsupervised training - no labels needed) we get as output one vector representation for, say the word “cell”. So even if we had a sentence like “He went to the prison cell with his cell phone to extract blood cell samples from inmates”, where the word cell has different meanings based on the sentence context, these models just collapse them all into one vector for “cell” in their output.
+
+Resources:
+
+- [Allennlp](https://allennlp.org/elmo)
+- [Analytics Vidhya Post on ELMo](https://www.analyticsvidhya.com/blog/2019/03/learn-to-use-elmo-to-extract-features-from-text/?utm_source=blog&utm_medium=pretrained-word-embeddings-nlp)
+
+- [ELMo talk](https://www.youtube.com/watch?v=9JfGxKkmBc0)
+
+- [NLP with Elmo and Flair](https://www.youtube.com/watch?v=ZEhWpZGlJvE)
+
+- [ELMo Paper](https://arxiv.org/pdf/1802.05365.pdf)
