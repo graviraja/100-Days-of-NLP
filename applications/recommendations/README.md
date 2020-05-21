@@ -2,7 +2,7 @@
     Recommendation based Applications in NLP
 </h1>
 
-# Recommendation systems fall under two broad categories:
+## Recommendation systems fall under two broad categories:
 
 - **`Content-based systems`** are recommendation systems that are based on the features of the item we’re trying to recommend. When talking about music, this includes for example the genre of the song or how many beats per minute it has.
 
