@@ -63,6 +63,14 @@ These word vectors are learned functions of the internal states of a deep bidire
 
 Checkout the code in `embeddings` folder
 
+## Architectures & Techniques
+
+There are several ways the input can be processed after tokenization. One can use different machine learning algorithms, statistical methods (or) deep learning architectures. Here I will try to cover some of the most prominent architectures & techniques used in NLP like RNN, Attention mechanism, ULMFit, Transformer, GPT-2, BERT, and others.
+
+### Day 6: RNN
+
+Checkout the code in `architectures` folder
+
 <h1 align="center" style="font-size:60px">
     Applications of NLP
 </h1>
