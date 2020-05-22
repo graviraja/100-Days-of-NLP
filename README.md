@@ -69,6 +69,10 @@ There are several ways the input can be processed after tokenization. One can us
 
 ### Day 6: RNN
 
+Recurrent networks - RNN, LSTM, GRU have proven to be one of the most important unit in NLP applications because of their architecture. There are many problems where the sequence nature needs to be remembered like in order to predict an emotion in the scene, previous scenes needs to be remembered.
+
+![rnn gif](./assets/images/architectures/rnn.gif)
+
 Checkout the code in `architectures` folder
 
 <h1 align="center" style="font-size:60px">
