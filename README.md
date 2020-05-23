@@ -102,3 +102,5 @@ Sentiment analysis refers to the use of natural language processing, text analys
 As an example, IMDb dataset is used and simpleRNN is used for processing and identifying the sentiment.
 
 ![sentiment](assets/images/applications/sentiment/simple.gif)
+
+Checkout the code in `applications/classification` folder
