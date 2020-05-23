@@ -92,3 +92,13 @@ By taking user’s listening queue as a sentence, with each word in that sentenc
 What’s interesting about those vectors is that similar songs will have weights that are closer together than songs that are unrelated.
 
 Checkout the code in `applications/recommendations` folder
+
+## Classification based Applications
+
+### Day 7: Simple Sentiment Classification with RNN - IMDB
+
+Sentiment analysis refers to the use of natural language processing, text analysis, computational linguistics, and biometrics to systematically identify, extract, quantify, and study affective states and subjective information.
+
+As an example, IMDb dataset is used and simpleRNN is used for processing and identifying the sentiment.
+
+![sentiment](assets/images/applications/sentiment/simple.gif)
