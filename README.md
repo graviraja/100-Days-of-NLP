@@ -102,3 +102,20 @@ Sentiment analysis refers to the use of natural language processing, text analys
 As an example, IMDb dataset is used and simpleRNN is used for processing and identifying the sentiment.
 
 ![sentiment](assets/images/applications/sentiment/simple.gif)
+
+### Day 8: Improved Sentiment Classification - IMDB
+
+After trying the basic RNN which gives a test_accuracy less than 50%, following techniques have been experimented and a test_accuracy above 88% is achieved.
+
+Techniques used:
+- packed padded sequences
+- pre-trained word embeddings
+- different RNN architecture
+- bidirectional RNN
+- multi-layer RNN
+- regularization
+- a different optimizer
+
+![sentiment](assets/images/applications/sentiment/improved.png)
+
+Checkout the code in `applications/classification` folder
