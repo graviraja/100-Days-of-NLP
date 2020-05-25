@@ -73,6 +73,12 @@ Recurrent networks - RNN, LSTM, GRU have proven to be one of the most important 
 
 ![rnn gif](./assets/images/architectures/rnn.gif)
 
+### Day 9: pack_padded_sequences
+
+When training RNN (LSTM or GRU or vanilla-RNN), it is difficult to batch the variable-length sequences. Ideally we will pad all the sequences to a fixed length and end up doing un-necessary computations. How can we overcome this? PyTorch provides the `pack_padded_sequences` functionality.
+
+![pack img](./assets/images/architectures/pack_padded_seq.jpg)
+
 Checkout the code in `architectures` folder
 
 <h1 align="center" style="font-size:60px">
