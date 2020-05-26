@@ -125,3 +125,14 @@ Techniques used:
 ![sentiment](assets/images/applications/sentiment/improved.png)
 
 Checkout the code in `applications/classification` folder
+
+## Generation based Applications
+
+### Day 10: Name Generation with LSTM
+
+A character-level LSTM language model is used. That is, we’ll give the LSTM a huge chunk of names and ask it to model the probability distribution of the next character in the sequence given a sequence of previous characters. This will then allow us to generate new name one character at a time
+
+![name_gen](assets/images/applications/generation/name_gen.png)
+
+Checkout the code in `applications/generation` folder
+
