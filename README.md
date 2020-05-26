@@ -125,3 +125,12 @@ Techniques used:
 ![sentiment](assets/images/applications/sentiment/improved.png)
 
 Checkout the code in `applications/classification` folder
+
+## Generation based Applications
+
+### Day 10: Name Generation with LSTM
+
+![name_gen](assets/images/applications/generation/name_gen.png)
+
+Checkout the code in `applications/generation` folder
+
