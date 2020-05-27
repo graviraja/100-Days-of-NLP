@@ -6,7 +6,7 @@ There are many generation based problems in NLP like language modelling, machine
 
 **Note: Please raise an issue for any suggestions, corrections, and feedback.**
 
-# Language Modelling
+# Language Modeling
 
 What is a Language Model in NLP? Language modeling is central to many important natural language processing tasks. A language model learns to predict the probability of a sequence of words.
 
@@ -30,4 +30,20 @@ and finally
 
 - [Unreasonable effectiveness of RNN](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
 - [US Baby Names Dataset](https://www.kaggle.com/kaggle/us-baby-names?select=NationalNames.csv)
-- [Language Modelling - ChunML](https://github.com/ChunML/NLP/blob/master/text_generation/)
+- [Language Modeling - ChunML](https://github.com/ChunML/NLP/blob/master/text_generation/)
+
+# Machine Translation
+
+Machine Translation (MT) is the task of automatically converting one natural language into another, preserving the meaning of the input text, and producing fluent text in the output language. Ideally, a source language sequence is translated into target language sequence. 
+
+## Basic Machine Translation.ipynb
+
+The most common sequence-to-sequence (seq2seq) models are encoder-decoder models, which commonly use a recurrent neural network (RNN) to encode the source (input) sentence into a single vector. In this notebook, we'll refer to this single vector as a context vector. We can think of the context vector as being an abstract representation of the entire input sentence. This vector is then decoded by a second RNN which learns to output the target (output) sentence by generating it one word at a time.
+
+![name_gen](../../assets/images/applications/generation/basic_translation.png)
+
+#### Resources
+
+- [Unreasonable effectiveness of RNN](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
+- [Ben Trevett Seq2Seq](https://github.com/bentrevett/pytorch-seq2seq)
+- [Multi30K dataset](https://pytorch.org/text/datasets.html#multi30k)
