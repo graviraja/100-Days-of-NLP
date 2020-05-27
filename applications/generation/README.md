@@ -47,3 +47,4 @@ The most common sequence-to-sequence (seq2seq) models are encoder-decoder models
 - [Unreasonable effectiveness of RNN](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
 - [Ben Trevett Seq2Seq](https://github.com/bentrevett/pytorch-seq2seq)
 - [Multi30K dataset](https://pytorch.org/text/datasets.html#multi30k)
+- [Sequence to Sequence Learning with Neural Networks paper](https://arxiv.org/abs/1409.3215)
