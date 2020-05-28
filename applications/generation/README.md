@@ -48,3 +48,21 @@ The most common sequence-to-sequence (seq2seq) models are encoder-decoder models
 - [Ben Trevett Seq2Seq](https://github.com/bentrevett/pytorch-seq2seq)
 - [Multi30K dataset](https://pytorch.org/text/datasets.html#multi30k)
 - [Sequence to Sequence Learning with Neural Networks paper](https://arxiv.org/abs/1409.3215)
+
+## Improved Machine Translation.ipynb
+
+After trying the basic machine translation which has text perplexity `36.68`, following techniques have been experimented and a test perplexity `7.041`.
+
+- GRU is used instead of LSTM
+- Single layer
+- Context vector is sent to decoder rnn along with decoder input embedding
+- Context vector is sent to classifier along with the decoder hidden state
+
+![improved_mt](../../assets/images/applications/generation/improved_mt.png)
+
+#### Resources
+
+- [Unreasonable effectiveness of RNN](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
+- [Ben Trevett Seq2Seq](https://github.com/bentrevett/pytorch-seq2seq)
+- [Multi30K dataset](https://pytorch.org/text/datasets.html#multi30k)
+- [Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation paper](https://arxiv.org/pdf/1406.1078.pdf)
