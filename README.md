@@ -143,3 +143,16 @@ The most common sequence-to-sequence (seq2seq) models are encoder-decoder models
 ![basic_mt](assets/images/applications/generation/basic_translation.png)
 
 Checkout the code in `applications/generation` folder
+
+### Day 12: Improved Machine Translation: German to English
+
+After trying the basic machine translation which has text perplexity `36.68`, following techniques have been experimented and a test perplexity `7.041`.
+
+- GRU is used instead of LSTM
+- Single layer
+- Context vector is sent to decoder rnn along with decoder input embedding
+- Context vector is sent to classifier along with the decoder hidden state
+
+![improved_mt](assets/images/applications/generation/improved_mt.png)
+
+Checkout the code in `applications/generation` folder
