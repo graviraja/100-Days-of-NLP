@@ -28,3 +28,23 @@ Resources:
 - [Harsh Trivedi gist](https://gist.github.com/HarshTrivedi/f4e7293e941b17d19058f6fb90ab0fec)
 - [Stackoverflow post](https://stackoverflow.com/questions/51030782/why-do-we-pack-the-sequences-in-pytorch)
 - [Image credits](https://github.com/sgrvinod/)
+
+# Attention Mechanisms
+
+The attention mechanism was born to help memorize long source sentences in neural machine translation (NMT). Rather than building a single context vector out of the encoder's last hidden state, attention is used to focus more on the relevant parts of the input while decoding a sentence. There are various types of attention mechanisms. Here I will point out the most used ones.
+
+## Luong Attention
+
+The context vector will be created by taking encoder outputs and the `current output` of the decoder rnn.
+
+![luong](../assets/images/architectures/luong_attention.png)
+
+The attention score can be calculated in three ways. `dot`, `general` and `concat`.
+
+![luong_fn](../assets/images/architectures/luong_fn.png)
+
+Resources:
+
+- [Floyd Hub article on attention mechanisms](https://blog.floydhub.com/attention-mechanism/)
+- [Lilian Blog on attention mechanisms](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html)
+- [Luong Attention Paper](https://arxiv.org/abs/1508.04025)

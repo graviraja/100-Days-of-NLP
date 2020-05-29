@@ -79,6 +79,18 @@ When training RNN (LSTM or GRU or vanilla-RNN), it is difficult to batch the var
 
 ![pack img](./assets/images/architectures/pack_padded_seq.jpg)
 
+### Day 13: Luong Attention
+
+The attention mechanism was born to help memorize long source sentences in neural machine translation (NMT). Rather than building a single context vector out of the encoder's last hidden state, attention is used to focus more on the relevant parts of the input while decoding a sentence. The context vector will be created by taking encoder outputs and the `current output` of the decoder rnn.
+
+![pack img](./assets/images/architectures/luong_attention.png)
+
+The attention score can be calculated in three ways. `dot`, `general` and `concat`.
+
+![luong_fn](./assets/images/architectures/luong_fn.png)
+
+
+
 Checkout the code in `architectures` folder
 
 <h1 align="center" style="font-size:60px">
