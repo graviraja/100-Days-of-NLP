@@ -48,3 +48,19 @@ Resources:
 - [Floyd Hub article on attention mechanisms](https://blog.floydhub.com/attention-mechanism/)
 - [Lilian Blog on attention mechanisms](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html)
 - [Luong Attention Paper](https://arxiv.org/abs/1508.04025)
+
+## Bahdanau Attention
+
+The context vector will be created by taking encoder outputs and the `previous hidden state` of the decoder rnn. The context vector is combined with decoder input embedding and fed as input to decoder rnn.
+
+![luong](../assets/images/architectures/bahdanau_attention.png)
+
+The Bahdanau attention is also called as `additive` attention.
+
+![luong_fn](../assets/images/architectures/bahdanau_fn.jpg)
+
+Resources:
+
+- [Floyd Hub article on attention mechanisms](https://blog.floydhub.com/attention-mechanism/)
+- [Lilian Blog on attention mechanisms](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html)
+- [Bahdanau Attention Paper](https://arxiv.org/pdf/1409.0473.pdf)

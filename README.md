@@ -90,6 +90,18 @@ The attention score can be calculated in three ways. `dot`, `general` and `conca
 ![luong_fn](./assets/images/architectures/luong_fn.png)
 
 
+### Day 14: Bahdanau Attention
+
+The major difference between Bahdanau & Luong attention is the way the context vector is created. The context vector will be created by taking encoder outputs and the `previous hidden state` of the decoder rnn. Where is in Luong attention the context vector will be created by taking encoder outputs and the `current hidden state` of the decoder rnn.
+
+Once the context is calculated it is combined with decoder input embedding and fed as input to decoder rnn.
+
+![pack img](./assets/images/architectures/bahdanau_attention.png)
+
+The Bahdanau attention is also called as `additive` attention.
+
+![bahdanau_fn](./assets/images/architectures/bahdanau_fn.jpg)
+
 
 Checkout the code in `architectures` folder
 
