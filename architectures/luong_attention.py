@@ -180,7 +180,7 @@ class LuongAttention(nn.Module):
         src_len = encoder_outputs.shape[0]
         decoder_hidden = decoder_hidden.expand(src_len, -1, -1)
         combined = torch.cat((decoder_hidden, encoder_outputs), dim=-1)
-        energy = nn.Tanh(self.w(combined))
+        energy = self.w(combined).tanh()
         return torch.sum(self.v * energy, dim=2)
 
 
@@ -202,8 +202,8 @@ class DecoderRNN(nn.Module):
         embedded = self.dropout(embedded)
 
         decoder_out, hidden = self.rnn(embedded, hidden)
-
-        attn_weights = self.attn(hidden, enc_out).transpose(1, 0)
+        attn_weights = self.attn(hidden, enc_out)
+        attn_weights = attn_weights.transpose(1, 0)
         enc_outs = enc_out.transpose(1, 0)
         context = torch.bmm(attn_weights.unsqueeze(1), enc_outs)
         combined = torch.cat((decoder_out, context.transpose(1, 0)), dim=2)
@@ -240,7 +240,7 @@ EMBEDDING_DIM = 10
 HIDDEN_DIM = 20
 DROPOUT = 0.5
 PAD_TOKEN = trg_word2id['<pad>']
-LUONG_METHOD = 'general'
+LUONG_METHOD = 'concat'
 
 enc = Encoder(INPUT_DIM, EMBEDDING_DIM, HIDDEN_DIM, DROPOUT, PAD_TOKEN)
 attn = LuongAttention(LUONG_METHOD, HIDDEN_DIM)
