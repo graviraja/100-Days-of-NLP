@@ -180,3 +180,9 @@ After trying the basic machine translation which has text perplexity `36.68`, fo
 ![improved_mt](assets/images/applications/generation/improved_mt.png)
 
 Checkout the code in `applications/generation` folder
+
+### Day 15: Machine Translation with Bahdanau Attention: German to English
+
+The attention mechanism was born to help memorize long source sentences in neural machine translation (NMT). Rather than building a single context vector out of the encoder's last hidden state, attention is used to focus more on the relevant parts of the input while decoding a sentence. The context vector will be created by taking encoder outputs and the `previous hidden state` of the decoder rnn.
+
+![bahdanau_mt](assets/images/applications/generation/mt_bahdanau.png)

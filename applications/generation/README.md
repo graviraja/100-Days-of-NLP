@@ -66,3 +66,14 @@ After trying the basic machine translation which has text perplexity `36.68`, fo
 - [Ben Trevett Seq2Seq](https://github.com/bentrevett/pytorch-seq2seq)
 - [Multi30K dataset](https://pytorch.org/text/datasets.html#multi30k)
 - [Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation paper](https://arxiv.org/pdf/1406.1078.pdf)
+
+## Machine Translation with Bahdanau Attention.ipynb
+
+The attention mechanism was born to help memorize long source sentences in neural machine translation (NMT). Rather than building a single context vector out of the encoder's last hidden state, attention is used to focus more on the relevant parts of the input while decoding a sentence. The context vector will be created by taking encoder outputs and the `previous hidden state` of the decoder rnn.
+
+![mt_bahdanau](../../assets/images/applications/generation/mt_bahdanau.png)
+
+#### Resources
+
+- [Ben Trevett Seq2Seq](https://github.com/bentrevett/pytorch-seq2seq)
+- [Bahdanau Attention](https://github.com/graviraja/100-Days-of-NLP/blob/master/architectures/bahdanau_attention.py)
