@@ -186,3 +186,9 @@ Checkout the code in `applications/generation` folder
 The attention mechanism was born to help memorize long source sentences in neural machine translation (NMT). Rather than building a single context vector out of the encoder's last hidden state, attention is used to focus more on the relevant parts of the input while decoding a sentence. The context vector will be created by taking encoder outputs and the `previous hidden state` of the decoder rnn.
 
 ![bahdanau_mt](assets/images/applications/generation/mt_bahdanau.png)
+
+### Day 16: Masking, Packing padded inputs, Attention Visualization, BLEU on MT: German to English
+
+Enhancements like masking (ignoring the attention over padded input), packing padded sequences (for better computation), attention visualization and BLEU metric on test data are implemented.
+
+![mt_visual](assets/images/applications/generation/mt_attn_visual_1.png)

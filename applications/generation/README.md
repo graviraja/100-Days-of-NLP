@@ -77,3 +77,10 @@ The attention mechanism was born to help memorize long source sentences in neura
 
 - [Ben Trevett Seq2Seq](https://github.com/bentrevett/pytorch-seq2seq)
 - [Bahdanau Attention](https://github.com/graviraja/100-Days-of-NLP/blob/master/architectures/bahdanau_attention.py)
+
+## Masking, Packing, Visualization, BLEU on MT.ipynb
+
+Enhancements like masking (ignoring the attention over padded input), packing padded sequences (for better computation), attention visualization and BLEU metric on test data are implemented.
+
+![mt_visual](../../assets/images/applications/generation/mt_attn_visual_1.png)
+![mt_visual_2](../../assets/images/applications/generation/mt_attn_visual_2.png)
