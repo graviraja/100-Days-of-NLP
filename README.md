@@ -148,6 +148,12 @@ Techniques used:
 
 ![sentiment](assets/images/applications/sentiment/improved.png)
 
+### Day 17: Sentiment Analysis with Attention - IMDB
+
+Attention helps in focusing on the relevant input when predicting the sentiment of the input. Bahdanau attention was used with taking the outputs of LSTM and concatenating the final forward & backward hidden state. Without using the pre-trained word embeddings, test accuracy of `88%` is achieved.
+
+![sentiment](assets/images/applications/sentiment/sentiment_attention_ex.png)
+
 Checkout the code in `applications/classification` folder
 
 ## Generation based Applications
