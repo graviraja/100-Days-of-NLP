@@ -45,3 +45,21 @@ The model used is a Multi Layer Bidirectional LSTM network
 - [Multi Layer RNN](https://github.com/graviraja/100-Days-of-NLP/blob/master/architectures/RNN.ipynb)
 - [Dropout - Andrew NG tutorial](https://www.youtube.com/watch?v=ARq74QuavAo)
 - [Ben Trevett Notebook](https://github.com/bentrevett/pytorch-sentiment-analysis/blob/master/2%20-%20Upgraded%20Sentiment%20Analysis.ipynb)
+
+### Sentiment Analysis with Attention.ipynb
+
+Attention helps in focusing on the relevant input when predicting the sentiment of the input. Bahdanau attention was used with taking the outputs of LSTM and concatenating the final forward & backward hidden state. Without using the pre-trained word embeddings, test accuracy of `88%` is achieved.
+
+The architecture looks like this:
+
+![sentiment](../../assets/images/applications/sentiment/sentiment_attention.png)
+
+Attention can also be visualized
+
+![pos_sentiment](../../assets/images/applications/sentiment/sentiment_attn_pos.png)
+
+![neg_sentiment](../../assets/images/applications/sentiment/sentiment_attn_neg.png)
+
+#### Resources
+
+- [Bahdananu Attention](https://github.com/graviraja/100-Days-of-NLP/blob/applications/sentiment/architectures/bahdanau_attention.py)
