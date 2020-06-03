@@ -103,6 +103,15 @@ The Bahdanau attention is also called as `additive` attention.
 ![bahdanau_fn](./assets/images/architectures/bahdanau_fn.jpg)
 
 
+### Day 18: Transformer
+
+Attention mechanisms have become an integral part of compelling sequence modeling and transduction models in various tasks, allowing modeling of dependencies without regard to their distance in the input or output sequences. Such attention mechanisms are used in conjunction with a recurrent network.
+
+The Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output.
+
+![transformer](./assets/images/architectures/transformer.png)
+
+
 Checkout the code in `architectures` folder
 
 <h1 align="center" style="font-size:60px">
