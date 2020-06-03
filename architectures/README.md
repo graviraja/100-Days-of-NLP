@@ -64,3 +64,17 @@ Resources:
 - [Floyd Hub article on attention mechanisms](https://blog.floydhub.com/attention-mechanism/)
 - [Lilian Blog on attention mechanisms](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html)
 - [Bahdanau Attention Paper](https://arxiv.org/pdf/1409.0473.pdf)
+
+## Transformer
+
+Attention mechanisms have become an integral part of compelling sequence modeling and transduction models in various tasks, allowing modeling of dependencies without regard to their distance in the input or output sequences. Such attention mechanisms are used in conjunction with a recurrent network.
+
+The Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output.
+
+![transformer](../assets/images/architectures/transformer.png)
+
+Resources:
+
+- [`Illustrated Transformer (Must read)`](http://jalammar.github.io/illustrated-transformer/)
+- [Attention is all you need - paper](https://arxiv.org/pdf/1706.03762.pdf)
+- [Reference code](https://github.com/bentrevett/pytorch-seq2seq/)
