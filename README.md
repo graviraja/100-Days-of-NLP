@@ -207,3 +207,9 @@ The attention mechanism was born to help memorize long source sentences in neura
 Enhancements like masking (ignoring the attention over padded input), packing padded sequences (for better computation), attention visualization and BLEU metric on test data are implemented.
 
 ![mt_visual](assets/images/applications/generation/mt_attn_visual_1.png)
+
+### Day 19: Machine Translation with Transformer: German to English
+
+The Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output is used to do Machine translation from German to English
+
+![mt_visual](assets/images/applications/generation/transformer.gif)
