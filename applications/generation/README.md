@@ -84,3 +84,14 @@ Enhancements like masking (ignoring the attention over padded input), packing pa
 
 ![mt_visual](../../assets/images/applications/generation/mt_attn_visual_1.png)
 ![mt_visual_2](../../assets/images/applications/generation/mt_attn_visual_2.png)
+
+## Machine Translation with Transformer.ipynb
+
+The Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output is used to do Machine translation from German to English. A test perplexity of `5.677` was achieved with even lesser training time.
+
+![mt_visual](../../assets/images/applications/generation/transformer.gif)
+
+#### Resources
+
+- [Ben Trevett Seq2Seq](https://github.com/bentrevett/pytorch-seq2seq)
+- [Google AI Blog on Transformer](https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html)
