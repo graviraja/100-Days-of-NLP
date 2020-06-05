@@ -91,6 +91,11 @@ The Transformer, a model architecture eschewing recurrence and instead relying e
 
 ![mt_visual](../../assets/images/applications/generation/transformer.gif)
 
+
+Self-attention also can be visualized.
+
+![mt_visual](../../assets/images/applications/generation/attn_visual.png)
+
 #### Resources
 
 - [Ben Trevett Seq2Seq](https://github.com/bentrevett/pytorch-seq2seq)

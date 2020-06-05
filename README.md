@@ -213,3 +213,9 @@ Enhancements like masking (ignoring the attention over padded input), packing pa
 The Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output is used to do Machine translation from German to English
 
 ![mt_visual](assets/images/applications/generation/transformer.gif)
+
+### Day 20: Self Attention Visualization
+
+Run time translation (Inference) and attention visualization are added for the transformer based machine translation model.
+
+![mt_visual](assets/images/applications/generation/attn_visual.png)
