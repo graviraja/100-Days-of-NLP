@@ -163,6 +163,13 @@ Attention helps in focusing on the relevant input when predicting the sentiment 
 
 ![sentiment](assets/images/applications/sentiment/sentiment_attention_ex.png)
 
+
+### Day 21: Document Classification with Hierarchical Attention Network
+
+A Hierarchical Attention Network (HAN) considers the hierarchical structure of documents (document - sentences - words) and includes an attention mechanism that is able to find the most important words and sentences in a document while taking the context into consideration.
+
+![han](assets/images/applications/classification/han.png)
+
 Checkout the code in `applications/classification` folder
 
 ## Generation based Applications
