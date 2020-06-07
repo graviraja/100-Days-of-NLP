@@ -170,6 +170,17 @@ A Hierarchical Attention Network (HAN) considers the hierarchical structure of d
 
 ![han](assets/images/applications/classification/han.png)
 
+
+### Day 22: Improved HAN with regularization techniques
+
+The basic HAN model is overfitting rapidly. In order to overcome this, techniques like `Embedding Dropout`, `Locked Dropout` are explored. There is one more other technique called `Weight Dropout` which is not implemented (Let me know if there are any good resources to implement this). Pre-trained word embeddings `Glove` are also used instead of random initialization. Since the attention can be done on sentence level and word level, we can visualize which words are important in a sentence and which sentences are important in a document.
+
+![han](assets/images/applications/classification/han_visual.png)
+
+![han](assets/images/applications/classification/han_visual2.png)
+
+![han](assets/images/applications/classification/han_visual3.png)
+
 Checkout the code in `applications/classification` folder
 
 ## Generation based Applications
