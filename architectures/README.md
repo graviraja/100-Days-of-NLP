@@ -101,11 +101,7 @@ I merely replicated the code from Annotated GPT-2 post to understand the archite
 Resources:
 
 - [Illustrated GPT-2 by Jay Alammar](http://jalammar.github.io/illustrated-gpt2/)
-
 - [Annotated GPT-2](https://amaarora.github.io/2020/02/18/annotatedGPT2.html)
-
 - [GPT-2 Paper](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
-
 - [Open AI Blog](https://openai.com/blog/better-language-models/)
-
 - [Hugging Face Transformers](https://github.com/huggingface/transformers)
