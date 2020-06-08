@@ -111,6 +111,17 @@ The Transformer, a model architecture eschewing recurrence and instead relying e
 
 ![transformer](./assets/images/architectures/transformer.png)
 
+### Day 23: GPT-2
+
+The GPT-2 paper states that: 
+
+> Natural language processing tasks, such as question answering, machine translation, reading comprehension, and summarization, are typically approached with supervised learning on taskspecific datasets. We demonstrate that language models begin to learn these tasks without any explicit supervision when trained on a new dataset of millions of webpages called WebText. Our largest model, GPT-2, is a 1.5B parameter Transformer that achieves state of the art results on 7 out of 8 tested language modeling datasets in a zero-shot setting but still underfits WebText. Samples from the model reflect these improvements and contain coherent paragraphs of text. These findings suggest a promising path towards building language processing systems which learn to perform tasks from their naturally occurring demonstrations.
+
+![gpt2](./assets/images/architectures/gpt2_usecase.png)
+
+The GPT-2 utilizes a 12-layer Decoder Only Transformer architecture.
+
+![gpt2](./assets/images/architectures/gpt2.png)
 
 Checkout the code in `architectures` folder
 
