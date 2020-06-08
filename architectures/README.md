@@ -29,11 +29,11 @@ Resources:
 - [Stackoverflow post](https://stackoverflow.com/questions/51030782/why-do-we-pack-the-sequences-in-pytorch)
 - [Image credits](https://github.com/sgrvinod/)
 
-# Attention Mechanisms
+## Attention Mechanisms
 
 The attention mechanism was born to help memorize long source sentences in neural machine translation (NMT). Rather than building a single context vector out of the encoder's last hidden state, attention is used to focus more on the relevant parts of the input while decoding a sentence. There are various types of attention mechanisms. Here I will point out the most used ones.
 
-## Luong Attention
+### Luong Attention
 
 The context vector will be created by taking encoder outputs and the `current output` of the decoder rnn.
 
@@ -49,7 +49,7 @@ Resources:
 - [Lilian Blog on attention mechanisms](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html)
 - [Luong Attention Paper](https://arxiv.org/abs/1508.04025)
 
-## Bahdanau Attention
+### Bahdanau Attention
 
 The context vector will be created by taking encoder outputs and the `previous hidden state` of the decoder rnn. The context vector is combined with decoder input embedding and fed as input to decoder rnn.
 
@@ -78,3 +78,30 @@ Resources:
 - [`Illustrated Transformer (Must read)`](http://jalammar.github.io/illustrated-transformer/)
 - [Attention is all you need - paper](https://arxiv.org/pdf/1706.03762.pdf)
 - [Reference code](https://github.com/bentrevett/pytorch-seq2seq/)
+
+## GPT2.ipynb
+
+The GPT-2 paper states that: 
+> Natural language processing tasks, such as question answering, machine translation, reading comprehension, and summarization, are typically approached with supervised learning on taskspecific datasets. We demonstrate that language models begin to learn these tasks without any explicit supervision when trained on a new dataset of millions of webpages called WebText. Our largest model, GPT-2, is a 1.5B parameter Transformer that achieves state of the art results on 7 out of 8 tested language modeling datasets in a zero-shot setting but still underfits WebText. Samples from the model reflect these improvements and contain coherent paragraphs of text. These findings suggest a promising path towards building language processing systems which learn to perform tasks from their naturally occurring demonstrations.
+
+![gpt](../assets/images/architectures/gpt2_usecase.png)
+
+The GPT-2 utilizes a 12-layer Decoder Only Transformer architecture.
+
+![gpt](../assets/images/architectures/gpt2.png)
+
+
+There are different size variants of GPT-2
+
+![gpt](../assets/images/architectures/gpt2_size.png)
+
+
+I merely replicated the code from Annotated GPT-2 post to understand the architecture.
+
+Resources:
+
+- [Illustrated GPT-2 by Jay Alammar](http://jalammar.github.io/illustrated-gpt2/)
+- [Annotated GPT-2](https://amaarora.github.io/2020/02/18/annotatedGPT2.html)
+- [GPT-2 Paper](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
+- [Open AI Blog](https://openai.com/blog/better-language-models/)
+- [Hugging Face Transformers](https://github.com/huggingface/transformers)
