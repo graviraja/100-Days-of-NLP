@@ -123,6 +123,17 @@ The GPT-2 utilizes a 12-layer Decoder Only Transformer architecture.
 
 ![gpt2](./assets/images/architectures/gpt2.png)
 
+
+### Day 24: BERT
+
+Language modeling is an effective task for using unlabeled data to pretrain neural networks in NLP. Traditional language models take the previous n tokens and predict the next one. In contrast, BERT trains a language model that takes both the previous and next tokens into account when predicting. BERT is also trained on a next sentence prediction task to better handle tasks that require reasoning about the relationship between two sentences (e.g. similar questions or not)
+
+![bert](./assets/images/architectures/bert.png)
+
+BERT uses the Transformer architecture for encoding sentences.
+
+![bert](./assets/images/architectures/bert_arch.png)
+
 Checkout the code in `architectures` folder
 
 <h1 align="center" style="font-size:60px">

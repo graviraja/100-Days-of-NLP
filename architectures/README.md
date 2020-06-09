@@ -105,3 +105,37 @@ Resources:
 - [GPT-2 Paper](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
 - [Open AI Blog](https://openai.com/blog/better-language-models/)
 - [Hugging Face Transformers](https://github.com/huggingface/transformers)
+
+
+## BERT.py
+
+At the end of 2018 researchers at Google AI Language open-sourced a new technique for Natural Language Processing (NLP) called `BERT` (Bidirectional Encoder Representations from Transformers) —  a major breakthrough which took the Deep Learning community by storm because of its incredible performance.
+
+![bert](../assets/images/architectures/bert.png)
+
+![bert](../assets/images/architectures/bert_arch.png)
+
+Main take aways:
+
+- Language modeling is an effective task for using unlabeled data to pretrain neural networks in NLP
+- Traditional language models take the previous n tokens and predict the next one. In contrast, BERT trains a language model that takes both the previous and next tokens into account when predicting.
+
+- BERT is also trained on a next sentence prediction task to better handle tasks that require reasoning about the relationship between two sentences (e.g. similar questions or not)
+
+- BERT uses the Transformer architecture for encoding sentences.
+
+- BERT performs better when given more parameters, even on small datasets.
+
+Similar to GPT-2, different sizes of BERT are also available.
+
+![bert](../assets/images/architectures/bert_size.png)
+
+There are many good online available resources to understand the BERT architecure. I can't any better than that. So here I try to implement the basic version of BERT. Refer to the following resources for better understanding of BERT.
+
+Resources:
+
+- [BERT Explained - TowardsML](https://towardsml.com/2019/09/17/bert-explained-a-complete-guide-with-theory-and-tutorial/)
+- [Demystifying BERT - Analytics Vidhya](https://www.analyticsvidhya.com/blog/2019/09/demystifying-bert-groundbreaking-nlp-framework/)
+- [BERT paper dissected - ML Explained](https://mlexplained.com/2019/01/07/paper-dissected-bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-explained/)
+- [Visual guide to BERT by Jay Alammar](http://jalammar.github.io/a-visual-guide-to-using-bert-for-the-first-time/)
+- [BERT paper](https://arxiv.org/pdf/1810.04805.pdf)
