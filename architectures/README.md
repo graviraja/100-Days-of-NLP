@@ -130,7 +130,7 @@ Similar to GPT-2, different sizes of BERT are also available.
 
 ![bert](../assets/images/architectures/bert_size.png)
 
-There are many good online available resources to understand the BERT architecure. I can't any better than that. So here I try to implement the basic version of BERT. Refer to the following resources for better understanding of BERT.
+There are many good online available resources to understand the BERT architecure. I can't explain any better than that. So here I try to implement the basic version of BERT. Refer to the following resources for better understanding of BERT.
 
 Resources:
 
