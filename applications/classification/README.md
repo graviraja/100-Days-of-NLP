@@ -64,6 +64,20 @@ Attention can also be visualized
 
 - [Bahdananu Attention](https://github.com/graviraja/100-Days-of-NLP/blob/applications/sentiment/architectures/bahdanau_attention.py)
 
+### Sentiment Analysis with BERT.ipynb
+
+BERT obtains new state-of-the-art results on eleven natural language processing tasks. Transfer learning in NLP has triggered after the release of BERT model. In this notebook, we will explore how to use BERT for Sentiment Analysis.
+
+Sentiment analysis using BERT can be summarized as:
+- Tokenize the sentence using BERT tokenizer (word-piece)
+- Add the specical tokens used in BERT
+- Send the tokenized sentence through BERT layers
+- Take the final hidden state of the `[CLS]` token
+- Send this hidden state to through a simple linear classifier which predicts the sentiment
+
+![bert_senti](../../assets/images/applications/sentiment/bert_senti.png)
+
+*Note: The amount of time taken by BERT model to train the IMDB dataset is huge compared to the previous implementations. GPU is required to train the model*
 
 # Document Classification
 
