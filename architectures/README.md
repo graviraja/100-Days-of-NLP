@@ -139,3 +139,23 @@ Resources:
 - [BERT paper dissected - ML Explained](https://mlexplained.com/2019/01/07/paper-dissected-bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-explained/)
 - [Visual guide to BERT by Jay Alammar](http://jalammar.github.io/a-visual-guide-to-using-bert-for-the-first-time/)
 - [BERT paper](https://arxiv.org/pdf/1810.04805.pdf)
+
+## pointer_network.py
+
+Pointer networks are sequence-to-sequence models where the output is discrete tokens corresponding to positions in an input sequence. The main differences between pointer networks and standard seq2seq models are:
+
+- The output of pointer networks is discrete and correspond to positions in the input sequence
+
+- The number of target classes in each step of the output depends on the length of the input, which is variable.
+
+Pointer networks are suitable for problems like sorting, word ordering, or computational linguistic problems such as convex hulls and traveling sales person problems. One common characteristic for all these problems is that the size of the target dictionary varies depending on the input length.
+
+Pointer network solves the problem of variable size output dictionaries using a mechanism of neural attention. It differs from the previous attention attempts in that, instead of using attention to blend hidden units of an encoder to a context vector at each decoder step, it uses attention as a pointer to select a member of the input sequence as the output.
+
+![pointer](../assets/images/architectures/pointer_network.png)
+
+Resources:
+
+- [Pointer network paper](https://arxiv.org/pdf/1506.03134v1.pdf)
+- [Pointer network explained](https://www.youtube.com/watch?v=gKD7FqkvXy0)
+- [Blog by A paper A day](https://medium.com/@sharaf/a-paper-a-day-11-pointer-networks-59f7af1a611c)
