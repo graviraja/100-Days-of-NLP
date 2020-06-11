@@ -134,6 +134,20 @@ BERT uses the Transformer architecture for encoding sentences.
 
 ![bert](./assets/images/architectures/bert_arch.png)
 
+
+### Day 26: Pointer Network
+
+Pointer networks are sequence-to-sequence models where the output is discrete tokens corresponding to positions in an input sequence. The main differences between pointer networks and standard seq2seq models are:
+
+- The output of pointer networks is discrete and correspond to positions in the input sequence
+
+- The number of target classes in each step of the output depends on the length of the input, which is variable.
+
+It differs from the previous attention attempts in that, instead of using attention to blend hidden units of an encoder to a context vector at each decoder step, it uses attention as a pointer to select a member of the input sequence as the output.
+
+![pointer](./assets/images/architectures/pointer_network.png)
+
+
 Checkout the code in `architectures` folder
 
 <h1 align="center" style="font-size:60px">
