@@ -224,6 +224,15 @@ The basic HAN model is overfitting rapidly. In order to overcome this, technique
 
 ![han](assets/images/applications/classification/han_visual3.png)
 
+### Day 27: QQP Classification with Siamese Network
+
+QQP stands for Quora Question Pairs. The objective of the task is for a given pair of questions; we need to find whether those questions are semantically similar to each other or not.
+
+The algorithm needs to take the pair of questions as input and should output their similarity.
+A Siamese network is used. A `Siamese neural network` (sometimes called a twin neural network) is an artificial neural network that uses the `same weights` while working in tandem on two different input vectors to compute comparable output vectors.
+
+![qqp](assets/images/applications/classification/qqp_siamese.png)
+
 Checkout the code in `applications/classification` folder
 
 ## Generation based Applications
