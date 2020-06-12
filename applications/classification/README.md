@@ -110,3 +110,19 @@ In this way, HAN performs better in predicting the class of a given document.
 - [LSTM Regularization paper](https://arxiv.org/pdf/1708.02182.pdf)
 - [Amazon Review Data](http://jmcauley.ucsd.edu/data/amazon/)
 - [Image referece](https://medium.com/analytics-vidhya/hierarchical-attention-networks-d220318cf87e)
+
+
+# QQP Classification with Siamese.ipynb
+
+QQP stands for Quora Question Pairs. The objective of the task is for a given pair of questions; we need to find whether those questions are semantically similar to each other or not.
+
+Quora released a dataset containing 400,000 pairs of potential question duplicate pairs. Each row contains IDs for each question in the pair, the full text for each question, and a binary value that indicates whether the line truly contains a duplicate pair.
+
+The algorithm needs to take the pair of questions as input and should output their similarity. A Siamese network is used. A `Siamese neural network` (sometimes called a twin neural network) is an artificial neural network that uses the `same weights` while working in tandem on two different input vectors to compute comparable output vectors.
+
+There are many potential use-cases upon solving this problem. Few of them are: 
+- Detecting a similar questions in social media platforms like Quora, Stackoverflow, Stackexchange, etc
+- As a classifier in GAN's for generating paraphrases
+- Chatbots
+
+![qqp](../../assets/images/applications/classification/qqp_siamese.png)
