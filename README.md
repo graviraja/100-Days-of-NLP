@@ -237,7 +237,7 @@ A Siamese network is used. A `Siamese neural network` (sometimes called a twin n
 
 After trying the siamese model, BERT was explored to do the Quora duplicate question pairs detection. BERT takes the question 1 and question 2 as input separated by `[SEP]` token and the classification was done using the final representation of `[CLS]` token.
 
-![qqp](assets/images/applications/classification/qqp_bert.jpeg)
+![qqp](assets/images/applications/classification/qqp_bert.png)
 
 Checkout the code in `applications/classification` folder
 
