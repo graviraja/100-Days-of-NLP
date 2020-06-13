@@ -233,6 +233,12 @@ A Siamese network is used. A `Siamese neural network` (sometimes called a twin n
 
 ![qqp](assets/images/applications/classification/qqp_siamese.png)
 
+### Day 28: QQP Classification with BERT
+
+After trying the siamese model, BERT was explored to do the Quora duplicate question pairs detection. BERT takes the question 1 and question 2 as input separated by `[SEP]` token and the classification was done using the final representation of `[CLS]` token.
+
+![qqp](assets/images/applications/classification/qqp_bert.jpeg)
+
 Checkout the code in `applications/classification` folder
 
 ## Generation based Applications
