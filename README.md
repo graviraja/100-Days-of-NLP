@@ -60,6 +60,12 @@ These word vectors are learned functions of the internal states of a deep bidire
 
 ![elmo arch](assets/images/embeddings/elmo.png)
 
+### Day 29: Sentence Embeddings
+
+A new architecture called SBERT was explored. The siamese network architecture enables that fixed-sized vectors for input sentences can be derived. Using a similarity measure like cosinesimilarity or Manhatten / Euclidean distance, semantically similar sentences can be found.
+
+![sentence emb](assets/images/embeddings/sentence_emb.png)
+
 
 Checkout the code in `embeddings` folder
 

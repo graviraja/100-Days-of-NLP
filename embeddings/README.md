@@ -93,3 +93,25 @@ Resources:
 - [NLP with Elmo and Flair](https://www.youtube.com/watch?v=ZEhWpZGlJvE)
 
 - [ELMo Paper](https://arxiv.org/pdf/1802.05365.pdf)
+
+### 4. Sentence Embeddings.ipynb: How to create sentence embeddings using BERT / LSTM / CNN models
+
+BERT has set a new state-of-the-art performance on sentence-pair regression tasks like semantic textual similarity (STS). However, it requires that both sentences are fed into the network, which causes a massive computational overhead.
+
+Finding in a collection of n = 10 000 sentences the pair with the highest similarity requires with BERT 𝑛∗(𝑛−1)/2 = 49 995 000 inference computations. On a modern V100 GPU, this requires about 65 hours. Similar, finding which of the over 40 million existent questions of Quora is the most similar for a new question could be modeled as a pair-wise comparison with BERT, however, answering a single query would require over 50 hours.
+
+The construction of BERT makes it unsuitable for semantic similarity search as well as for unsupervised tasks like clustering.
+
+A common method to address clustering and semantic search is to map each sentence to a vector space such that semantically similar sentences are close. Researchers have started to input individual sentences into BERT and to derive fixedsize sentence embeddings. The most commonly used approach is to average the BERT output layer (known as BERT embeddings) or by using the output of the first token (the [CLS] token). This common practice yields rather bad sentence embeddings, often worse than averaging GloVe embeddings
+
+To alleviate this issue, a new architecture called SBERT was used. The siamese network architecture enables that fixed-sized vectors for input sentences can be derived. Using a similarity measure like cosinesimilarity or Manhatten / Euclidean distance, semantically similar sentences can be found. These similarity measures can be performed extremely efficient on modern hardware, allowing SBERT to be used for semantic similarity search as well as for clustering.
+
+![sentence emb](../assets/images/embeddings/sentence_emb.png)
+
+The complexity for finding the most similar sentence pair in a collection of 10,000 sentences is reduced from 65 hours with BERT to the computation of 10,000 sentence embeddings
+(\~5 seconds with SBERT) and computing cosinesimilarity (~0.01 seconds). By using optimized index structures, finding the most similar Quora question can be reduced from 50 hours to a few milliseconds.
+
+Resources:
+
+- [Sentence BERT Paper](https://arxiv.org/pdf/1908.10084.pdf)
+- [Sentence Transformers Repo](https://github.com/UKPLab/sentence-transformers)
