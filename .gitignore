@@ -132,3 +132,5 @@ dmypy.json
 
 */models/*
 !*/models/.gitkeep
+
+.data/
