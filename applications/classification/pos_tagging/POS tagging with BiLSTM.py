@@ -287,11 +287,12 @@ for token, pred_tag, actual_tag in zip(tokens, pred_tags, actual_tags):
 
 sentence = 'I love this movie'
 
-tokens, tags, unks = inference(model, 
-                                  device, 
-                                  sentence, 
-                                  TEXT, 
-                                  UD_TAGS)
+tokens, tags, unks = inference(
+    model, 
+    device, 
+    sentence, 
+    TEXT, 
+    UD_TAGS)
 
 
 print("Pred. Tag\tToken\n")
