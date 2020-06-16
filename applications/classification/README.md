@@ -45,3 +45,13 @@ The algorithm needs to take the pair of questions as input and should output the
 ## QQP Classification with BERT.ipynb
 
 After trying the siamese model, BERT was explored to do the Quora duplicate question pairs detection. BERT takes the question 1 and question 2 as input separated by `[SEP]` token and the classification was done using the final representation of `[CLS]` token.
+
+# POS Tagging
+
+Part-of-Speech (PoS) tagging, is a task of labelling each word in a sentence with its appropriate part of speech.
+
+## POS tagging with BiLSTM.py
+
+This code covers the basic workflow. We'll learn how to: load data, create train/test/validation splits, build a vocabulary, create data iterators, define a model and implement the train/evaluate/test loop and run time (inference) tagging.
+
+The model used is a Multi Layer Bi-directional LSTM network

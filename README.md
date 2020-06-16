@@ -245,6 +245,15 @@ After trying the siamese model, BERT was explored to do the Quora duplicate ques
 
 ![qqp](assets/images/applications/classification/qqp_bert.png)
 
+
+### Day 31: POS Classification with BiLSTM
+
+Part-of-Speech (PoS) tagging, is a task of labelling each word in a sentence with its appropriate part of speech. This code covers the basic workflow. We'll learn how to: load data, create train/test/validation splits, build a vocabulary, create data iterators, define a model and implement the train/evaluate/test loop and run time (inference) tagging.
+
+The model used is a Multi Layer Bi-directional LSTM network
+
+![pos](assets/images/applications/classification/pos_lstm.png)
+
 Checkout the code in `applications/classification` folder
 
 ## Generation based Applications
