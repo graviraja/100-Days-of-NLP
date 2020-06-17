@@ -59,5 +59,3 @@ The model used is a Multi Layer Bi-directional LSTM network
 ## POS tagging with Transformer.py
 
 After trying the RNN approach, POS tagging with Transformer based architecture is explored. Since the Transformer contains both Encoder and Decoder and for the sequence labeling task only `Encoder` will be sufficient. As the data is small having 6 layers of Encoder will overfit the data. So a 3-layer Transformer Encoder model was used.
-
-![pos](../../../assets/images/applications/classification/pos_transformer.png)
