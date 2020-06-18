@@ -260,6 +260,12 @@ After trying the RNN approach, POS tagging with Transformer based architecture i
 
 ![pos](assets/images/applications/classification/pos_transformer.png)
 
+### Day 33: POS tagging with BERT
+
+After trying POS tagging with Transformer Encoder, POS Tagging with pre-trained BERT model is exploed. It achieved test accuracy of `91%`.
+
+![pos](assets/images/applications/classification/pos_bert.png)
+
 Checkout the code in `applications/classification` folder
 
 ## Generation based Applications

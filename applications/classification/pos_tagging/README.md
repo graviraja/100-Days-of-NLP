@@ -29,3 +29,14 @@ After trying the RNN approach, POS tagging with Transformer based architecture i
 
 - [Transformer - Pytorch docs](https://pytorch.org/docs/stable/nn.html#transformer)
 - [Transformer - My Sample code](https://github.com/graviraja/100-Days-of-NLP/blob/master/architectures/transformer.py)
+
+
+## POS tagging with BERT.ipynb
+
+After trying POS tagging with Transformer Encoder, POS Tagging with pre-trained BERT model is exploed. It achieved test accuracy of `91%`.
+
+![pos](../../../assets/images/applications/classification/pos_bert.png)
+
+#### Resources
+
+- [PoS tagging - Ben Trevett](https://github.com/bentrevett/pytorch-pos-tagging/)
