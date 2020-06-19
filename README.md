@@ -323,6 +323,15 @@ Run time translation (Inference) and attention visualization are added for the t
 
 ![mt_visual](assets/images/applications/generation/attn_visual.png)
 
+### Day 34: Basic Utterance Generation
+
+Utterance generation is an important problem in NLP, especially in question answering, information retrieval, information extraction, conversation systems, to name a few. It could also be used to create synthentic training data for many NLP problems.
+
+The most common used model for this kind of application is sequence-to-sequence network. A basic 2 layer LSTM was used.
+
+![utt_gen](assets/images/applications/generation/basic_utterance_gen.png)
+
+Checkout the code in `applications/generation` folder
 
 ## Ranking Based Applications
 
