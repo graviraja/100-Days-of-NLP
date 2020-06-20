@@ -20,3 +20,4 @@ After trying the basic LSTM apporach, Utterance generation with attention mechan
 
 - [Bahdanau Attention Mechanism](https://github.com/graviraja/100-Days-of-NLP/blob/master/architectures/bahdanau_attention.py)
 - [Luong Attention Mechanism](https://github.com/graviraja/100-Days-of-NLP/blob/master/architectures/luong_attention.py)
+- [Image ref](https://arxiv.org/pdf/1704.04368.pdf)
