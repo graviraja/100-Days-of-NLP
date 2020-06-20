@@ -331,6 +331,14 @@ The most common used model for this kind of application is sequence-to-sequence 
 
 ![utt_gen](assets/images/applications/generation/basic_utterance_gen.png)
 
+### Day 35: Utterance Generation with Attention
+
+The attention mechanism will help in memorizing long sentences. Rather than building a single context vector out of the encoder's last hidden state, attention is used to focus more on the relevant parts of the input while decoding a sentence. The context vector will be created by taking encoder outputs and the `hidden state` of the decoder rnn.
+
+After trying the basic LSTM apporach, Utterance generation with attention mechanism was implemented. Inference (run time generation) was also implemented.
+
+![utt_gen](assets/images/applications/generation/utterance_gen_attn.png)
+
 Checkout the code in `applications/generation` folder
 
 ## Ranking Based Applications
