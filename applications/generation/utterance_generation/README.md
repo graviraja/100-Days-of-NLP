@@ -16,6 +16,11 @@ After trying the basic LSTM apporach, Utterance generation with attention mechan
 
 ![utt_gen](../../../assets/images/applications/generation/utterance_gen_attn.png)
 
+Attention can also be visualised.
+
+![utt_gen](../../../assets/images/applications/generation/utt_attn_visual_1.png)
+![utt_gen](../../../assets/images/applications/generation/utt_attn_visual_2.png)
+
 #### Resources
 
 - [Bahdanau Attention Mechanism](https://github.com/graviraja/100-Days-of-NLP/blob/master/architectures/bahdanau_attention.py)

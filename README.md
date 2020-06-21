@@ -339,6 +339,13 @@ After trying the basic LSTM apporach, Utterance generation with attention mechan
 
 ![utt_gen](assets/images/applications/generation/utterance_gen_attn.png)
 
+### Day 36: Visualization of Attention
+
+While generating the a word in the utterance, decoder will attend over encoder inputs to find the most relevant word. This process can be visualized.
+
+![utt_gen](assets/images/applications/generation/utt_attn_visual_1.png)
+![utt_gen](assets/images/applications/generation/utt_attn_visual_2.png)
+
 Checkout the code in `applications/generation` folder
 
 ## Ranking Based Applications
