@@ -344,7 +344,16 @@ After trying the basic LSTM apporach, Utterance generation with attention mechan
 While generating the a word in the utterance, decoder will attend over encoder inputs to find the most relevant word. This process can be visualized.
 
 ![utt_gen](assets/images/applications/generation/utt_attn_visual_1.png)
-![utt_gen](assets/images/applications/generation/utt_attn_visual_2.png)
+
+
+### Day 37: Utterance Generation with Beam Search
+
+One of the ways to mitigate the repetition in the generation of utterances is to use Beam Search. By choosing the top-scored word at each step (greedy) may lead to a sub-optimal solution but by choosing a lower scored word that may reach an optimal solution.
+
+Instead of greedily choosing the most likely next step as the sequence is constructed, the beam search expands all possible next steps and keeps the k most likely, where k is a user-specified parameter and controls the number of beams or parallel searches through the sequence of probabilities.
+
+![utt_gen](assets/images/applications/generation/beam_search.png)
+
 
 Checkout the code in `applications/generation` folder
 
