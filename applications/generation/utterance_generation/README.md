@@ -26,3 +26,17 @@ Attention can also be visualised.
 - [Bahdanau Attention Mechanism](https://github.com/graviraja/100-Days-of-NLP/blob/master/architectures/bahdanau_attention.py)
 - [Luong Attention Mechanism](https://github.com/graviraja/100-Days-of-NLP/blob/master/architectures/luong_attention.py)
 - [Image ref](https://arxiv.org/pdf/1704.04368.pdf)
+
+## Utterance Generation with Beam Search.ipynb
+
+One of the ways to mitigate the repetition in the generation of utterances is to use Beam Search. By choosing the top-scored word at each step (greedy) may lead to a sub-optimal solution but by choosing a lower scored word that may reach an optimal solution.
+
+Instead of greedily choosing the most likely next step as the sequence is constructed, the beam search expands all possible next steps and keeps the k most likely, where k is a user-specified parameter and controls the number of beams or parallel searches through the sequence of probabilities.
+
+![utt_gen](../../../assets/images/applications/generation/beam_search.png)
+
+#### Resources
+
+- [Basic Beam Search explanation](https://machinelearningmastery.com/beam-search-decoder-natural-language-processing/)
+- [Image reference](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning)
+
