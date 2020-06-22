@@ -25,7 +25,7 @@ Attention can also be visualised.
 
 - [Bahdanau Attention Mechanism](https://github.com/graviraja/100-Days-of-NLP/blob/master/architectures/bahdanau_attention.py)
 - [Luong Attention Mechanism](https://github.com/graviraja/100-Days-of-NLP/blob/master/architectures/luong_attention.py)
-
+- [Image ref](https://arxiv.org/pdf/1704.04368.pdf)
 
 ## Utterance Generation with Beam Search.ipynb
 
@@ -38,5 +38,5 @@ Instead of greedily choosing the most likely next step as the sequence is constr
 #### Resources
 
 - [Basic Beam Search explanation](https://machinelearningmastery.com/beam-search-decoder-natural-language-processing/)
-
 - [Image reference](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning)
+
