@@ -354,6 +354,14 @@ Instead of greedily choosing the most likely next step as the sequence is constr
 
 ![utt_gen](assets/images/applications/generation/beam_search.png)
 
+### Day 38: Utterance Generation with Coverage
+
+Repetition is a common problem for sequenceto-sequence models, and is especially pronounced when generating a multi-sentence text. In coverage model, we maintain a
+coverage vector `c^t`, which is the sum of attention distributions over all previous decoder timesteps
+
+![utt_gen](assets/images/applications/generation/coverage.png)
+
+This ensures that the attention mechanism’s current decision (choosing where to attend next) is informed by a reminder of its previous decisions (summarized in c^t). This should make it easier for the attention mechanism to avoid repeatedly attending to the same locations, and thus avoid generating repetitive text.
 
 Checkout the code in `applications/generation` folder
 
