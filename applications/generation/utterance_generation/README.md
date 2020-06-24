@@ -55,3 +55,16 @@ This ensures that the attention mechanism’s current decision (choosing where t
 
 - [Coverage Paper](https://arxiv.org/pdf/1601.04811.pdf)
 - [Pointer Network Paper](https://arxiv.org/pdf/1704.04368.pdf)
+
+## Utterance Generation with Transformer.ipynb
+
+The Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output is used to do generate utterance from a given sentence. The training time was also lot faster `4x` times compared to RNN based architecture.
+
+![utt_gen](../../../assets/images/applications/generation/utt_gen_transformer.png)
+
+#### Resources
+
+- [Basic Transformer](https://github.com/graviraja/100-Days-of-NLP/blob/applications/generation/architectures/transformer.py)
+- [Ben Trevett Seq2Seq](https://github.com/bentrevett/pytorch-seq2seq)
+- [Google AI Blog on Transformer](https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html)
+- [Transformer Paper](https://arxiv.org/pdf/1706.03762.pdf)
