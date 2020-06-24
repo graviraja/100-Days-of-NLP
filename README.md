@@ -363,6 +363,12 @@ coverage vector `c^t`, which is the sum of attention distributions over all prev
 
 This ensures that the attention mechanism’s current decision (choosing where to attend next) is informed by a reminder of its previous decisions (summarized in c^t). This should make it easier for the attention mechanism to avoid repeatedly attending to the same locations, and thus avoid generating repetitive text.
 
+### Day 39: Utterance Generation with Transformer
+
+The Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output is used to do generate utterance from a given sentence. The training time was also lot faster `4x` times compared to RNN based architecture.
+
+![utt_gen](assets/images/applications/generation/utt_gen_transformer.png)
+
 Checkout the code in `applications/generation` folder
 
 ## Ranking Based Applications
