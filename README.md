@@ -369,6 +369,12 @@ The Transformer, a model architecture eschewing recurrence and instead relying e
 
 ![utt_gen](assets/images/applications/generation/utt_gen_transformer.png)
 
+### Day 40: Beam Search in Utterance Generation with Transformer
+
+Added beam search to utterance generation with transformers. With beam search, the generated utterances are more diverse and can be more than 1 (which is the case of the greedy approach). This implemented was better than naive one implemented previously.
+
+![utt_gen](assets/images/applications/generation/utt_gen_beam.png)
+
 Checkout the code in `applications/generation` folder
 
 ## Ranking Based Applications
