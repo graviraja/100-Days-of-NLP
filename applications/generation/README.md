@@ -59,7 +59,7 @@ The attention mechanism will help in memorizing long sentences. Rather than buil
 
 After trying the basic LSTM apporach, Utterance generation with attention mechanism was implemented. Inference (run time generation) was also implemented.
 
-## Utterance Generation with Beam Search.ipynb
+## Utterance Generation with Basic Beam Search.ipynb
 
 One of the ways to mitigate the repetition in the generation of utterances is to use Beam Search. By choosing the top-scored word at each step (greedy) may lead to a sub-optimal solution but by choosing a lower scored word that may reach an optimal solution.
 
@@ -74,4 +74,4 @@ This ensures that the attention mechanism’s current decision (choosing where t
 
 ## Utterance Generation with Transformer.ipynb
 
-The Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output is used to do generate utterance from a given sentence. The training time was also lot faster `4x` times compared to RNN based architecture.
+The Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output is used to do generate utterance from a given sentence. The training time was also lot faster `4x` times compared to RNN based architecture. Beam search was also improved.

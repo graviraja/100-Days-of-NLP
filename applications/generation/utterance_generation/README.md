@@ -27,11 +27,13 @@ Attention can also be visualised.
 - [Luong Attention Mechanism](https://github.com/graviraja/100-Days-of-NLP/blob/master/architectures/luong_attention.py)
 - [Image ref](https://arxiv.org/pdf/1704.04368.pdf)
 
-## Utterance Generation with Beam Search.ipynb
+## Utterance Generation with Basic Beam Search.ipynb
 
 One of the ways to mitigate the repetition in the generation of utterances is to use Beam Search. By choosing the top-scored word at each step (greedy) may lead to a sub-optimal solution but by choosing a lower scored word that may reach an optimal solution.
 
 Instead of greedily choosing the most likely next step as the sequence is constructed, the beam search expands all possible next steps and keeps the k most likely, where k is a user-specified parameter and controls the number of beams or parallel searches through the sequence of probabilities.
+
+A basic beam search was implemented.
 
 ![utt_gen](../../../assets/images/applications/generation/beam_search.png)
 
@@ -62,9 +64,14 @@ The Transformer, a model architecture eschewing recurrence and instead relying e
 
 ![utt_gen](../../../assets/images/applications/generation/utt_gen_transformer.png)
 
+Beam search was improved.
+
+![utt_gen](../../../assets/images/applications/generation/utt_gen_beam.png)
+
 #### Resources
 
 - [Basic Transformer](https://github.com/graviraja/100-Days-of-NLP/blob/applications/generation/architectures/transformer.py)
 - [Ben Trevett Seq2Seq](https://github.com/bentrevett/pytorch-seq2seq)
 - [Google AI Blog on Transformer](https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html)
 - [Transformer Paper](https://arxiv.org/pdf/1706.03762.pdf)
+- [Beam Search Reference](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Machine-Translation)
