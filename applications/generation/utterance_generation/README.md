@@ -75,3 +75,15 @@ Beam search was improved.
 - [Google AI Blog on Transformer](https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html)
 - [Transformer Paper](https://arxiv.org/pdf/1706.03762.pdf)
 - [Beam Search Reference](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Machine-Translation)
+
+## Utterance Generation with BPE Tokenization.ipynb
+
+Today, subword tokenization schemes inspired by BPE have become the norm in most advanced models including the very popular family of contextual language models like BERT, GPT-2,RoBERTa, etc.
+
+BPE brings the perfect balance between character and word-level hybrid representations which makes it capable of managing large corpora. This behavior also enables the encoding of any rare words in the vocabulary with appropriate subword tokens without introducing any “unknown” tokens.
+
+![utt_gen](../../../assets/images/applications/generation/utt_gen_bpe.png)
+
+#### Resources
+
+- [youtokentome library](https://github.com/VKCOM/YouTokenToMe)

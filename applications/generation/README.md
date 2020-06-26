@@ -75,3 +75,11 @@ This ensures that the attention mechanism’s current decision (choosing where t
 ## Utterance Generation with Transformer.ipynb
 
 The Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output is used to do generate utterance from a given sentence. The training time was also lot faster `4x` times compared to RNN based architecture. Beam search was also improved.
+
+## Utterance Generation with BPE Tokenization.ipynb
+
+Today, subword tokenization schemes inspired by BPE have become the norm in most advanced models including the very popular family of contextual language models like BERT, GPT-2,RoBERTa, etc.
+
+BPE brings the perfect balance between character and word-level hybrid representations which makes it capable of managing large corpora. This behavior also enables the encoding of any rare words in the vocabulary with appropriate subword tokens without introducing any “unknown” tokens.
+
+Utterance generation using BPE tokenization instead of Spacy is implemented.
