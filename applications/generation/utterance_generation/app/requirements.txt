@@ -1,0 +1,5 @@
+torch==1.4.0
+streamlit==0.61.0
+pandas==1.0.3
+numpy==1.18.4
+youtokentome==1.0.6
