@@ -385,6 +385,12 @@ BPE brings the perfect balance between character and word-level hybrid represent
 
 ![utt_gen](assets/images/applications/generation/utt_gen_bpe.png)
 
+### Day 42: Utterance Generation using Streamlit
+
+Converted the Utterance Generation into an app using streamlit. The pre-trained model trained on the Quora dataset is available now.
+
+![utt_gen](assets/images/applications/generation/utt_gen_app.png)
+
 Checkout the code in `applications/generation` folder
 
 ## Ranking Based Applications
