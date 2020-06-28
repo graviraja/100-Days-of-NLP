@@ -87,3 +87,31 @@ BPE brings the perfect balance between character and word-level hybrid represent
 #### Resources
 
 - [youtokentome library](https://github.com/VKCOM/YouTokenToMe)
+
+## General Utterance Generation.ipynb
+
+Till now the Utterance Generation is trained using the `Quora Question Pairs` dataset, which contains sentences in the form of questions. When given a normal sentence (which is not in a question format) the generated utterances are very poor. This is due the `bias` induced by the dataset. Since the model is only trained on question type sentences, it fails to generate utterances in case of normal sentences. In order to generate utterances for a normal sentence, `COCO` dataset is used to train the model.
+
+We can see the generated utterances are in question format when model is trained on Quora dataset.
+
+![utt_gen](../../../assets/images/applications/generation/utt_gen_bias.png)
+
+Where as when the model is trained on COCO dataset, the generated utterances are different.
+
+![utt_gen](../../../assets/images/applications/generation/utt_gen_gen.png)
+
+
+#### Resources
+
+- [COCO Dataset](https://cocodataset.org/)
+- [Understanding Data Bias](https://towardsdatascience.com/survey-d4f168791e57)
+
+
+## Further Enhancements
+
+With this I am ending the utterance generation series. However, following enhancements could be done.
+
+- Evaluation metrics like BLEU, Rouge
+- Combined training / finetuning on Quora dataset, so that model can generate utterances for general sentences and question type utterances
+- Explore the Paraphrase Dataset and train the model on that data
+- Using pretrained models like GPT-2/T5/BART model
