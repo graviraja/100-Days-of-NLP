@@ -391,6 +391,14 @@ Converted the Utterance Generation into an app using streamlit. The pre-trained 
 
 ![utt_gen](assets/images/applications/generation/utt_gen_app.png)
 
+### Day 43: General Utterance Generation
+
+Till now the Utterance Generation is trained using the `Quora Question Pairs` dataset, which contains sentences in the form of questions. When given a normal sentence (which is not in a question format) the generated utterances are very poor. This is due the `bias` induced by the dataset. Since the model is only trained on question type sentences, it fails to generate utterances in case of normal sentences. In order to generate utterances for a normal sentence, `COCO` dataset is used to train the model.
+![utt_gen](assets/images/applications/generation/utt_gen_bias.png)
+
+![utt_gen](assets/images/applications/generation/utt_gen_gen.png)
+
+
 Checkout the code in `applications/generation` folder
 
 ## Ranking Based Applications
