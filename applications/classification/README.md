@@ -63,3 +63,13 @@ After trying the RNN approach, POS tagging with Transformer based architecture i
 ## POS tagging with BERT.ipynb
 
 After trying POS tagging with Transformer Encoder, POS Tagging with pre-trained BERT model is exploed. It achieved test accuracy of `91%`.
+
+# Natural Language Inference (NLI)
+
+The goal of natural language inference (NLI), a widely-studied natural language processing task, is to determine if one given statement (a premise) semantically entails another given statement (a hypothesis).
+
+## NLI with BiLSTM.ipynb
+
+This notebook covers the basic workflow. We'll learn how to: load data, create train/test/validation splits, build a vocabulary, create data iterators, define a model and implement the train/evaluate/test loop.
+
+The model used is a Siamese BiLSTM network.

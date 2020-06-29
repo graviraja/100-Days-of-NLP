@@ -266,6 +266,16 @@ After trying POS tagging with Transformer Encoder, POS Tagging with pre-trained 
 
 ![pos](assets/images/applications/classification/pos_bert.png)
 
+### Day 44: NLI with BiLSTM
+
+The goal of natural language inference (NLI), a widely-studied natural language processing task, is to determine if one given statement (a premise) semantically entails another given statement (a hypothesis).
+
+A basic model with Siamese BiLSTM network is implemeted
+
+![nli](assets/images/applications/classification/nli_bilstm.png)
+
+This can be treated as base-line setup. A test accuracy of `76.84%` was achieved.
+
 Checkout the code in `applications/classification` folder
 
 ## Generation based Applications
