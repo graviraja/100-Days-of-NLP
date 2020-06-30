@@ -73,3 +73,9 @@ The goal of natural language inference (NLI), a widely-studied natural language 
 This notebook covers the basic workflow. We'll learn how to: load data, create train/test/validation splits, build a vocabulary, create data iterators, define a model and implement the train/evaluate/test loop.
 
 The model used is a Siamese BiLSTM network.
+
+### NLI with Attention.ipynb
+
+In the previous notebook, we have taken the final hidden states of Premise and Hypothesis as the representations from LSTM. Now instead of taking the final hidden states, attention will be computed across all the input tokens and a final weighted vector is taken as the representation of Premise and Hypothesis. 
+
+The test accuracy increased from `76.84%` to `79.51%`.

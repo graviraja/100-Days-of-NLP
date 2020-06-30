@@ -276,6 +276,14 @@ A basic model with Siamese BiLSTM network is implemeted
 
 This can be treated as base-line setup. A test accuracy of `76.84%` was achieved.
 
+### Day 45: NLI with Attention
+
+In the previous notebook, the final hidden states of Premise and Hypothesis as the representations from LSTM. Now instead of taking the final hidden states, attention will be computed across all the input tokens and a final weighted vector is taken as the representation of Premise and Hypothesis. 
+
+![nli](assets/images/applications/classification/nli_attention.png)
+
+The test accuracy increased from `76.84%` to `79.51%`.
+
 Checkout the code in `applications/classification` folder
 
 ## Generation based Applications
