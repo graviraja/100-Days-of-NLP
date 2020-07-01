@@ -284,6 +284,12 @@ In the previous notebook, the final hidden states of Premise and Hypothesis as t
 
 The test accuracy increased from `76.84%` to `79.51%`.
 
+### Day 46: NLI with Transformer
+
+Transformer Encoder was used to encode the Premise and Hypothesis. Once the sentence is passed through the Encoder, summation of all the tokens is considered as the final representation (others variants can be explored). The model accuracy is less compared to RNN variants.
+
+![nli](../../../assets/images/applications/classification/nli_transformer.png)
+
 Checkout the code in `applications/classification` folder
 
 ## Generation based Applications
