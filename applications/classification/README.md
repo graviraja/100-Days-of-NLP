@@ -79,3 +79,7 @@ The model used is a Siamese BiLSTM network.
 In the previous notebook, we have taken the final hidden states of Premise and Hypothesis as the representations from LSTM. Now instead of taking the final hidden states, attention will be computed across all the input tokens and a final weighted vector is taken as the representation of Premise and Hypothesis. 
 
 The test accuracy increased from `76.84%` to `79.51%`.
+
+### NLI with Transformer.ipynb
+
+Transformer Encoder was used to encode the Premise and Hypothesis. Once the sentence is passed through the Encoder, summation of all the tokens is considered as the final representation (others variants can be explored). The model accuracy is less compared to RNN variants.

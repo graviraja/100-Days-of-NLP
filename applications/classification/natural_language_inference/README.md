@@ -33,3 +33,9 @@ Also embeddings are initialized with Glove. In order to reduce the unneccessary 
 #### Resources
 
 - [Packing Padded Sequences](https://github.com/graviraja/100-Days-of-NLP/blob/master/architectures/pack_padded_sequences.py)
+
+### NLI with Transformer.ipynb
+
+Transformer Encoder was used to encode the Premise and Hypothesis. Once the sentence is passed through the Encoder, summation of all the tokens is considered as the final representation (others variants can be explored). The model accuracy is less compared to RNN variants.
+
+![nli](../../../assets/images/applications/classification/nli_transformer.png)
