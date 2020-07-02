@@ -83,3 +83,7 @@ The test accuracy increased from `76.84%` to `79.51%`.
 ### NLI with Transformer.ipynb
 
 Transformer Encoder was used to encode the Premise and Hypothesis. Once the sentence is passed through the Encoder, summation of all the tokens is considered as the final representation (others variants can be explored). The model accuracy is less compared to RNN variants.
+
+### NLI with BERT.ipynb
+
+NLI with Bert base model was explored. BERT takes the Premise and Hypothesis as input separated by `[SEP]` token and the classification was done using the final representation of `[CLS]` token.
