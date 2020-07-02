@@ -39,3 +39,11 @@ Also embeddings are initialized with Glove. In order to reduce the unneccessary 
 Transformer Encoder was used to encode the Premise and Hypothesis. Once the sentence is passed through the Encoder, summation of all the tokens is considered as the final representation (others variants can be explored). The model accuracy is less compared to RNN variants.
 
 ![nli](../../../assets/images/applications/classification/nli_transformer.png)
+
+### NLI with BERT.ipynb
+
+NLI with Bert base model was explored. BERT takes the Premise and Hypothesis as input separated by `[SEP]` token and the classification was done using the final representation of `[CLS]` token.
+
+![nli](../../../assets/images/applications/classification/qqp_bert.png)
+
+Note: Since the dataset contains 500k+ pairs, training will take a lot of time. In the notebook only how to use BERT is explored.
