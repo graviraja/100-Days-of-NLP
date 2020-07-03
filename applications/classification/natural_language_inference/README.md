@@ -47,3 +47,16 @@ NLI with Bert base model was explored. BERT takes the Premise and Hypothesis as 
 ![nli](../../../assets/images/applications/classification/qqp_bert.png)
 
 Note: Since the dataset contains 500k+ pairs, training will take a lot of time. In the notebook only how to use BERT is explored.
+
+### NLI with Distillation.ipynb
+
+**`Distillation`**: A technique you can use to compress a large model, called the `teacher`, into a smaller model, called the `student`. Following student, teacher models are used in order to perform distillation on NLI.
+
+- Student Model: Logistic Regression
+- Teacher Model: Bi-directional LSTM with Attention
+
+![nli](../../../assets/images/applications/classification/distillation.png)
+
+#### Resources
+
+- [Distillation blog by Victor Sanh (A must read)](https://medium.com/huggingface/distilbert-8cf3380435b5)

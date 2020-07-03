@@ -87,3 +87,10 @@ Transformer Encoder was used to encode the Premise and Hypothesis. Once the sent
 ### NLI with BERT.ipynb
 
 NLI with Bert base model was explored. BERT takes the Premise and Hypothesis as input separated by `[SEP]` token and the classification was done using the final representation of `[CLS]` token.
+
+### NLI with Distillation.ipynb
+
+**`Distillation`**: A technique you can use to compress a large model, called the `teacher`, into a smaller model, called the `student`. Following student, teacher models are used in order to perform distillation on NLI.
+
+- Student Model: Logistic Regression
+- Teacher Model: Bi-directional LSTM with Attention
