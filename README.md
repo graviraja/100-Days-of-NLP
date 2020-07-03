@@ -290,11 +290,20 @@ Transformer Encoder was used to encode the Premise and Hypothesis. Once the sent
 
 ![nli](assets/images/applications/classification/nli_transformer.png)
 
-### Day 47: NLI with BERT.ipynb
+### Day 47: NLI with BERT
 
 NLI with Bert base model was explored. BERT takes the Premise and Hypothesis as inputs separated by `[SEP]` token and the classification was done using the final representation of `[CLS]` token.
 
 ![nli](assets/images/applications/classification/qqp_bert.png)
+
+### Day 48: NLI with Distillation
+
+**`Distillation`**: A technique you can use to compress a large model, called the `teacher`, into a smaller model, called the `student`. Following student, teacher models are used in order to perform distillation on NLI.
+
+- Student Model: Logistic Regression
+- Teacher Model: Bi-directional LSTM with Attention
+
+![nli](assets/images/applications/classification/distillation.png)
 
 Checkout the code in `applications/classification` folder
 
