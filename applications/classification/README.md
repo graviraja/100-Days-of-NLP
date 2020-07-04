@@ -94,3 +94,24 @@ NLI with Bert base model was explored. BERT takes the Premise and Hypothesis as 
 
 - Student Model: Logistic Regression
 - Teacher Model: Bi-directional LSTM with Attention
+
+# Toxic Comment Classification
+
+Discussing things you care about can be difficult. The threat of abuse and harassment online means that many people stop expressing themselves and give up on seeking different opinions. Platforms struggle to effectively facilitate conversations, leading many communities to limit or completely shut down user comments.
+
+You are provided with a large number of Wikipedia comments which have been labeled by human raters for toxic behavior. The types of toxicity are:
+
+- toxic
+- severe_toxic
+- obscene
+- threat
+- insult
+- identity_hate
+
+### Toxic Comment Classification with GRU.ipynb
+
+This notebook covers the basic workflow. We'll learn how to: load data, data analysis, create train/test/validation splits, build a vocabulary, create data iterators, define a model and implement the train/evaluate/test loop.
+
+The model used is a Bi-directional GRU network.
+
+A test accuracy of `99.42%` was achieved.
