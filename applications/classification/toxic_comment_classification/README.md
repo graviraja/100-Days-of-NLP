@@ -22,4 +22,4 @@ The model used is a Bi-directional GRU network.
 
 ![toxic](../../../assets/images/applications/classification/toxic_gru.png)
 
-A test accuracy of `99.42%` was achieved.
+A test accuracy of `99.42%` was achieved. Also contains the implementation of ROC AUC metric.

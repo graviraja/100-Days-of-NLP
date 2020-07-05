@@ -325,6 +325,11 @@ The model used is a Bi-directional GRU network.
 
 A test accuracy of `99.42%` was achieved.
 
+### Day 50: Toxic Comment Classification with GRU
+
+With bi-directional GRU model, test-accuracy of 99.42% was achieved. Since 90% of the data is not labeled into any of the toxicity, simply predicting all the data as non-toxic gives a 90% accurate model. So accuracy is not a reliable metric. A different metric ROC AUC was implemented.
+
+
 Checkout the code in `applications/classification` folder
 
 ## Generation based Applications

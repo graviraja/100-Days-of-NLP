@@ -114,4 +114,4 @@ This notebook covers the basic workflow. We'll learn how to: load data, data ana
 
 The model used is a Bi-directional GRU network.
 
-A test accuracy of `99.42%` was achieved.
+A test accuracy of `99.42%` was achieved. A test accuracy of `99.42%` was achieved. Also contains the implementation of ROC AUC metric.
