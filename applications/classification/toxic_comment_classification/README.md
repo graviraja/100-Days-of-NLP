@@ -23,3 +23,18 @@ The model used is a Bi-directional GRU network.
 ![toxic](../../../assets/images/applications/classification/toxic_gru.png)
 
 A test accuracy of `99.42%` was achieved. Also contains the implementation of ROC AUC metric.
+
+### Improved Toxic Comment Classification.ipynb
+
+With `Categorical Cross Entropy` as the loss, roc_auc score of `0.5` is achieved. By changing the loss to `Binary Cross Entropy` and also modifying the model a bit by adding pooling layers (max, mean), the roc_auc score improved to `0.9873`.
+
+![toxic](../../../assets/images/applications/classification/improved_toxic.png)
+
+#### Further Improvements
+
+The following modifications/improvements can be explored.
+
+*   Pre-trained embeddings
+*   Cross Validation
+*   Ensemble of Networks
+*   Data Augmentation

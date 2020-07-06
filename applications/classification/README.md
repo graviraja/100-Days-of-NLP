@@ -115,3 +115,7 @@ This notebook covers the basic workflow. We'll learn how to: load data, data ana
 The model used is a Bi-directional GRU network.
 
 A test accuracy of `99.42%` was achieved. A test accuracy of `99.42%` was achieved. Also contains the implementation of ROC AUC metric.
+
+### Improved Toxic Comment Classification.ipynb
+
+With `Categorical Cross Entropy` as the loss, roc_auc score of `0.5` is achieved. By changing the loss to `Binary Cross Entropy` and also modifying the model a bit by adding pooling layers (max, mean), the roc_auc score improved to `0.9873`.
