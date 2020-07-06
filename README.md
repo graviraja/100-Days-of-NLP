@@ -329,6 +329,12 @@ A test accuracy of `99.42%` was achieved.
 
 With bi-directional GRU model, test-accuracy of 99.42% was achieved. Since 90% of the data is not labeled into any of the toxicity, simply predicting all the data as non-toxic gives a 90% accurate model. So accuracy is not a reliable metric. A different metric ROC AUC was implemented.
 
+### Day 51: Improved Toxic Comment Classification
+
+With `Categorical Cross Entropy` as the loss, roc_auc score of `0.5` is achieved. By changing the loss to `Binary Cross Entropy` and also modifying the model a bit by adding pooling layers (max, mean), the roc_auc score improved to `0.9873`.
+
+![toxic](assets/images/applications/classification/improved_toxic.png)
+
 
 Checkout the code in `applications/classification` folder
 
