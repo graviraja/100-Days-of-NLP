@@ -335,6 +335,11 @@ With `Categorical Cross Entropy` as the loss, roc_auc score of `0.5` is achieved
 
 ![toxic](assets/images/applications/classification/improved_toxic.png)
 
+### Day 52: Toxic Comment Classification using Streamlit
+
+Converted the Toxic Comment Classification into an app using streamlit. The pre-trained model is available now.
+
+![utt_gen](assets/images/applications/classification/toxic_app.png)
 
 Checkout the code in `applications/classification` folder
 
