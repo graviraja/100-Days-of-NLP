@@ -119,3 +119,11 @@ A test accuracy of `99.42%` was achieved. A test accuracy of `99.42%` was achiev
 ### Improved Toxic Comment Classification.ipynb
 
 With `Categorical Cross Entropy` as the loss, roc_auc score of `0.5` is achieved. By changing the loss to `Binary Cross Entropy` and also modifying the model a bit by adding pooling layers (max, mean), the roc_auc score improved to `0.9873`.
+
+# Grammatically Correct Sentence
+
+Can artificial neural networks have the ability to judge the grammatical acceptability of a sentence? In order to explore this task, the Corpus of Linguistic Acceptability (CoLA) dataset is used. CoLA is a set of sentences labeled as grammatically correct or incorrect. 
+
+### CoLA with BERT.ipynb
+
+BERT obtains new state-of-the-art results on eleven natural language processing tasks. Transfer learning in NLP has triggered after the release of BERT model. In this notebook, how to use BERT for classifying whether a sentence is grammatically correct or not using CoLA dataset is explored.
