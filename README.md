@@ -359,7 +359,7 @@ An accuracy of `85%` and Matthews Correlation Coefficient (MCC) of `64.1` were a
 - Student Model: Distilbert base uncased
 - Teacher Model: Bert base uncased
 
-![cola](ssets/images/applications/classification/distilbert.png)
+![cola](assets/images/applications/classification/distilbert.png)
 
 Following experiments have been tried:
 - Training using Bert Model (Teacher). Acc: `84.06`, MCC: `61.5`
