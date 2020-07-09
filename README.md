@@ -351,6 +351,21 @@ BERT obtains new state-of-the-art results on eleven natural language processing 
 
 An accuracy of `85%` and Matthews Correlation Coefficient (MCC) of `64.1` were achieved.
 
+
+### Day 54: CoLA with DistilBERT
+
+**`Distillation`**: A technique you can use to compress a large model, called the `teacher`, into a smaller model, called the `student`. Following student, teacher models are used in order to perform distillation on CoLA.
+
+- Student Model: Distilbert base uncased
+- Teacher Model: Bert base uncased
+
+![cola](assets/images/applications/classification/distilbert.png)
+
+Following experiments have been tried:
+- Training using Bert Model (Teacher). Acc: `84.06`, MCC: `61.5`
+- Training using Distilbert Model (without teacher forcing). Acc: `82.54`, MCC: `57`
+- Training using Distilbert Model (with teacher forcing). Acc: `82.92`, MCC: `57.9`
+
 Checkout the code in `applications/classification` folder
 
 ## Generation based Applications

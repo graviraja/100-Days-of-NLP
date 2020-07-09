@@ -127,3 +127,11 @@ Can artificial neural networks have the ability to judge the grammatical accepta
 ### CoLA with BERT.ipynb
 
 BERT obtains new state-of-the-art results on eleven natural language processing tasks. Transfer learning in NLP has triggered after the release of BERT model. In this notebook, how to use BERT for classifying whether a sentence is grammatically correct or not using CoLA dataset is explored.
+
+
+### CoLA with DistilBERT.ipynb
+
+**`Distillation`**: A technique you can use to compress a large model, called the `teacher`, into a smaller model, called the `student`. Following student, teacher models are used in order to perform distillation on CoLA.
+
+- Student Model: Distilbert base uncased
+- Teacher Model: Bert base uncased
