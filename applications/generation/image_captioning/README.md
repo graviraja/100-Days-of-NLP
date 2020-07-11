@@ -8,9 +8,17 @@ The encoder-decoder framework is widely used for this task. The image encoder is
 
 In this notebook, the resnet-152 model pretrained on the ILSVRC-2012-CLS image classification dataset is used as the encoder. The decoder is a long short-term memory (LSTM) network.
 
-![name_gen](../../../assets/images/applications/generation/basic_image_captioning.png)
+![img_cap](../../../assets/images/applications/generation/basic_image_captioning.png)
 
 Flickr8K dataset is used. It contains 8092 images, each image having 5 captions.
+
+Few examples of generated caption for a given image:
+
+![img_cap](../../../assets/images/applications/generation/img_cap_1.png)
+
+![img_cap](../../../assets/images/applications/generation/img_cap_2.png)
+
+![img_cap](../../../assets/images/applications/generation/img_cap_3.png)
 
 #### Resources
 
