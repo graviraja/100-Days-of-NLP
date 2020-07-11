@@ -499,6 +499,16 @@ Till now the Utterance Generation is trained using the `Quora Question Pairs` da
 ![utt_gen](assets/images/applications/generation/utt_gen_gen.png)
 
 
+### Day 55-56 Basic Image Captioning.ipynb
+
+Image Captioning is the process of generating a textual description of an image. It uses both Natural Language Processing and Computer Vision techniques to generate the captions.
+
+The encoder-decoder framework is widely used for this task. The image encoder is a convolutional neural network (CNN). The decoder is a recurrent neural network(RNN) which takes in the encoded image and generates the caption.
+
+In this notebook, the resnet-152 model pretrained on the ILSVRC-2012-CLS image classification dataset is used as the encoder. The decoder is a long short-term memory (LSTM) network.
+
+![img_cap](assets/images/applications/generation/basic_image_captioning.png)
+
 Checkout the code in `applications/generation` folder
 
 ## Ranking Based Applications
