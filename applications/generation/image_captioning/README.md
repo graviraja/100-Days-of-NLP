@@ -24,3 +24,18 @@ Few examples of generated caption for a given image:
 
 - [Flickr8k Dataset](https://www.kaggle.com/adityajn105/flickr8k?rvi=1)
 - [Reference code](https://github.com/yunjey/pytorch-tutorial/tree/master/tutorials/03-advanced/image_captioning)
+
+
+## Image Captioning with Attention.ipynb
+
+In this notebook, the resnet-101 model pretrained on the ILSVRC-2012-CLS image classification dataset is used as the encoder. The decoder is a long short-term memory (LSTM) network. Attention is implemented. Instead of the simple average, we use the weighted average across all pixels, with the weights of the important pixels being greater. This weighted representation of the image can be concatenated with the previously generated word at each step to generate the next word of the caption.
+
+![img_cap](../../../assets/images/applications/generation/img_cap_attn.png)
+
+Code improvements:
+    - Added attention
+    - Splitted data into training, validation instead of using all the data
+    - Training, validation methods
+
+#### Resources
+- [Image reference](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning)
