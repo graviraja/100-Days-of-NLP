@@ -39,3 +39,12 @@ Code improvements:
 
 #### Resources
 - [Image reference](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning)
+
+### Captioning with Beam Search.ipynb
+
+Instead of greedily choosing the most likely next step as the caption is constructed, the beam search expands all possible next steps and keeps the k most likely, where k is a user-specified parameter and controls the number of beams or parallel searches through the sequence of probabilities.
+
+![img_cap](../../../assets/images/applications/generation/img_cap_beam.png)
+
+#### Resources
+- [Reference code](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning)

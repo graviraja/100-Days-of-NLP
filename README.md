@@ -515,6 +515,13 @@ In this notebook, the resnet-101 model pretrained on the ILSVRC-2012-CLS image c
 
 ![img_cap](assets/images/applications/generation/img_cap_attn.png)
 
+
+## Day 58-59: Image Captioning with Beam Search
+
+Instead of greedily choosing the most likely next step as the caption is constructed, the beam search expands all possible next steps and keeps the k most likely, where k is a user-specified parameter and controls the number of beams or parallel searches through the sequence of probabilities.
+
+![img_cap](assets/images/applications/generation/img_cap_beam.png)
+
 Checkout the code in `applications/generation` folder
 
 ## Ranking Based Applications
