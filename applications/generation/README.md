@@ -101,3 +101,7 @@ In this notebook, the resnet-152 model pretrained on the ILSVRC-2012-CLS image c
 ## Image Captioning with Attention.ipynb
 
 In this notebook, the resnet-101 model pretrained on the ILSVRC-2012-CLS image classification dataset is used as the encoder. The decoder is a long short-term memory (LSTM) network. Attention is implemented. Instead of the simple average, we use the weighted average across all pixels, with the weights of the important pixels being greater. This weighted representation of the image can be concatenated with the previously generated word at each step to generate the next word of the caption.
+
+### Captioning with Beam Search.ipynb
+
+Instead of greedily choosing the most likely next step as the caption is constructed, the beam search expands all possible next steps and keeps the k most likely, where k is a user-specified parameter and controls the number of beams or parallel searches through the sequence of probabilities.
