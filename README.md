@@ -509,18 +509,28 @@ In this notebook, the resnet-152 model pretrained on the ILSVRC-2012-CLS image c
 
 ![img_cap](assets/images/applications/generation/basic_image_captioning.png)
 
-## Day 57: Image Captioning with Attention
+### Day 57: Image Captioning with Attention
 
 In this notebook, the resnet-101 model pretrained on the ILSVRC-2012-CLS image classification dataset is used as the encoder. The decoder is a long short-term memory (LSTM) network. Attention is implemented. Instead of the simple average, we use the weighted average across all pixels, with the weights of the important pixels being greater. This weighted representation of the image can be concatenated with the previously generated word at each step to generate the next word of the caption.
 
 ![img_cap](assets/images/applications/generation/img_cap_attn.png)
 
 
-## Day 58-59: Image Captioning with Beam Search
+### Day 58-59: Image Captioning with Beam Search
 
 Instead of greedily choosing the most likely next step as the caption is constructed, the beam search expands all possible next steps and keeps the k most likely, where k is a user-specified parameter and controls the number of beams or parallel searches through the sequence of probabilities.
 
 ![img_cap](assets/images/applications/generation/img_cap_beam.png)
+
+### Day 60: Image Captioning with BPE Tokenization
+
+Today, subword tokenization schemes inspired by BPE have become the norm in most advanced models including the very popular family of contextual language models like BERT, GPT-2,RoBERTa, etc.
+
+BPE brings the perfect balance between character and word-level hybrid representations which makes it capable of managing large corpora. This behavior also enables the encoding of any rare words in the vocabulary with appropriate subword tokens without introducing any “unknown” tokens.
+
+BPE was used in order to tokenize the captions instead of using nltk.
+
+![img_cap](assets/images/applications/generation/utt_gen_bpe.png)
 
 Checkout the code in `applications/generation` folder
 
