@@ -48,3 +48,19 @@ Instead of greedily choosing the most likely next step as the caption is constru
 
 #### Resources
 - [Reference code](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning)
+
+
+## Image Captioning with BPE Tokenization.ipynb
+
+Today, subword tokenization schemes inspired by BPE have become the norm in most advanced models including the very popular family of contextual language models like BERT, GPT-2,RoBERTa, etc.
+
+BPE brings the perfect balance between character and word-level hybrid representations which makes it capable of managing large corpora. This behavior also enables the encoding of any rare words in the vocabulary with appropriate subword tokens without introducing any “unknown” tokens.
+
+BPE was used in order to tokenize the captions instead of using nltk.
+
+Code improvements:
+    - Tokenization using BPE
+    - Using karapathy's train, val, test splits
+
+#### Resources
+- [Karapathy image captioning splits](http://cs.stanford.edu/people/karpathy/deepimagesent/caption_datasets.zip)
