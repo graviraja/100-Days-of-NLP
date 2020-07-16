@@ -29,7 +29,8 @@ T5 reframes all NLP tasks into a unified text-to-text-format where the input and
 
 For the article on [twitter accounts hacked](https://www.indiatoday.in/technology/news/story/twitter-accounts-hacked-hackers-explain-how-they-got-access-to-accounts-of-bill-gates-others-1701138-2020-07-16), our model summarized the news as below:
 
-> a Twitter employee was apparently the reason behind the hacking of high profile accounts that took place on Wednesday night. The hacker then used an internal tool to take over the accounts, according to a report in the New York Times.The account was also used to post tweets related to cryptocurrency scams from the high profile accounts that were hacked by the hacker, who claimed to have been paid by the company?s insiders.Also read: #BitcoinScamTomorrow
+![news_sum](../../../assets/images/applications/generation/summ_ex.png)
+
 
 #### Resources
 
