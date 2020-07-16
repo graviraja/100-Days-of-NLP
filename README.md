@@ -532,6 +532,13 @@ BPE was used in order to tokenize the captions instead of using nltk.
 
 ![img_cap](assets/images/applications/generation/utt_gen_bpe.png)
 
+
+### Day 61: News Summarization with T5
+
+Automatic text summarization is the task of producing a concise and fluent summary while preserving key information content and overall meaning. Have you come across the mobile app `inshorts`? It’s an innovative news app that converts news articles into a 60-word summary.  And that is exactly what we are going to do in this notebook. The model used for this task is `T5`.
+
+![news_sum](assets/images/applications/generation/t5_summ.png)
+
 Checkout the code in `applications/generation` folder
 
 ## Ranking Based Applications
