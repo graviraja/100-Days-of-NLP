@@ -132,3 +132,9 @@ The Encoder-Decoder architecture is mainly used to solve the sequence-to-sequenc
 ## News Summarization with T5.ipynb
 
 Have you come across the mobile app `inshorts`? It’s an innovative news app that converts news articles into a 60-word summary.  And that is exactly what we are going to do in this notebook. The model used for this task is `T5`.
+
+## Email Subject Generation with T5.ipynb
+
+Given the overwhelming number of emails, an effective subject line becomes essential to better inform the recipient of the email's content.
+
+Email subject generation using T5 model was explored. AESLC dataset was used for this purpose.

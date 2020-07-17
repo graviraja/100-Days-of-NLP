@@ -42,3 +42,17 @@ For the article on [twitter accounts hacked](https://www.indiatoday.in/technolog
 - [T5 paper](https://arxiv.org/pdf/1910.10683.pdf)
 - [Huggingface T5 model documentation](https://huggingface.co/transformers/model_doc/t5.html)
 - [Reference code](https://github.com/abhimishra91/transformers-tutorials/blob/master/transformers_summarization_wandb.ipynb)
+
+## Email Subject Generation with T5.ipynb
+
+Given the overwhelming number of emails, an effective subject line becomes essential to better inform the recipient of the email's content.
+
+Email subject generation using T5 model was explored. AESLC dataset was used for this purpose.
+
+![email_sub](../../../assets/images/applications/generation/email_sub.png)
+
+*Note: Only 50% of the dataset is used for training, validation and testing. As the complete data training will take time.*
+
+#### Resources
+
+- [Dataset - Annotated Enron Subject Line Corpus (AESLC)](https://github.com/ryanzhumich/AESLC)

@@ -539,6 +539,14 @@ Automatic text summarization is the task of producing a concise and fluent summa
 
 ![news_sum](assets/images/applications/generation/t5_summ.png)
 
+### Day 62: Email Subject Generation with T5.
+
+Given the overwhelming number of emails, an effective subject line becomes essential to better inform the recipient of the email's content.
+
+Email subject generation using T5 model was explored. AESLC dataset was used for this purpose.
+
+![email_sub](assets/images/applications/generation/email_sub.png)
+
 Checkout the code in `applications/generation` folder
 
 ## Ranking Based Applications
