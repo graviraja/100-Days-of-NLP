@@ -172,3 +172,15 @@ Thus is required an automated algorithm that can read through the text documents
 In this notebook, we will take a real example of the `20 Newsgroups` dataset and use LDA to extract the naturally discussed topics.
 
 ![lda](../assets/images/architectures/lda.png)
+
+LDA’s approach to topic modeling is it considers each document as a collection of topics in a certain proportion. And each topic as a collection of keywords, again, in a certain proportion.
+
+Once you provide the algorithm with the number of topics, all it does it to rearrange the topics distribution within the documents and keywords distribution within the topics to obtain a good composition of topic-keywords distribution.
+
+Resources:
+
+- [Youtube video on LDA](https://www.youtube.com/watch?v=3mHy4OSyRf0)
+- [LDA Tutorial](https://www.youtube.com/watch?v=NYkbqzTlW3w)
+- [Towardsdatascience blog on LDA](https://towardsdatascience.com/topic-modeling-and-latent-dirichlet-allocation-in-python-9bf156893c24)
+- [Analyticsvidhya blog on LDA](https://www.analyticsvidhya.com/blog/2016/08/beginners-guide-to-topic-modeling-in-python/)
+- [Machinelearningplus blog on LDA](https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/#4whatdoesldado)
