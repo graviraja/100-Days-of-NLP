@@ -153,6 +153,21 @@ It differs from the previous attention attempts in that, instead of using attent
 
 ![pointer](./assets/images/architectures/pointer_network.png)
 
+### Day 63: Topic Modelling using LDA
+
+One of the primary applications of natural language processing is to automatically extract what topics people are discussing from large volumes of text. Some examples of large text could be feeds from social media, customer reviews of hotels, movies, etc, user feedbacks, news stories, e-mails of customer complaints etc.
+
+Knowing what people are talking about and understanding their problems and opinions is highly valuable to businesses, administrators, political campaigns. And it’s really hard to manually read through such large volumes and compile the topics.
+
+Thus is required an automated algorithm that can read through the text documents and automatically output the topics discussed.
+
+In this notebook, we will take a real example of the `20 Newsgroups` dataset and use LDA to extract the naturally discussed topics.
+
+![lda](assets/images/architectures/lda.png)
+
+LDA’s approach to topic modeling is it considers each document as a collection of topics in a certain proportion. And each topic as a collection of keywords, again, in a certain proportion.
+
+Once you provide the algorithm with the number of topics, all it does it to rearrange the topics distribution within the documents and keywords distribution within the topics to obtain a good composition of topic-keywords distribution.
 
 Checkout the code in `architectures` folder
 
