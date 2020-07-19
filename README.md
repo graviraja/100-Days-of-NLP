@@ -573,3 +573,16 @@ There was a kaggle problem on [covid-19 research challenge](https://www.kaggle.c
 The procedure I have taken is to convert the `abstracts` into a embedding representation using [`sentence-transformers`](https://github.com/UKPLab/sentence-transformers/). When a query is asked, it will converted into an embedding and then ranked across the abstracts using `cosine` similarity.
 
 ![covid](assets/images/applications/ranking/covid.png)
+
+
+## Clustering based Applications
+
+### Day 64: Topic Identification in News using LDA
+
+LDA’s approach to topic modeling is it considers each document as a collection of topics in a certain proportion. And each topic as a collection of keywords, again, in a certain proportion.
+
+Once you provide the algorithm with the number of topics, all it does it to rearrange the topics distribution within the documents and keywords distribution within the topics to obtain a good composition of topic-keywords distribution.
+
+20 Newsgroup dataset was used and only the articles are provided to identify the topics. Topic Modelling algorithms will provide for each topic what are the important words. It is upto us to infer the topic name.
+
+![lda](assets/images/applications/clustering/lda_vis.png)
