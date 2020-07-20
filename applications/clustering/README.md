@@ -22,3 +22,12 @@ LDA’s approach to topic modeling is it considers each document as a collection
 Once you provide the algorithm with the number of topics, all it does it to rearrange the topics distribution within the documents and keywords distribution within the topics to obtain a good composition of topic-keywords distribution.
 
 20 Newsgroup dataset was used and only the articles are provided to identify the topics. Topic Modelling algorithms will provide for each topic what are the important words. It is upto us to infer the topic name.
+
+## Improved Topic Identification in News using LDA.ipynb
+
+Choosing the number of topics is a difficult job in Topic Modelling. In order to choose the optimal number of topics, grid search is performed on various hypermeters. In order to choose the best model the model having the best perplexity score is choosed.
+
+A good topic model will have non-overlapping, fairly big sized blobs for each topic. 
+
+- LDA using scikit-learn is implemented.
+- Inference (predicting the topic of a given sentence) is also implemented.
