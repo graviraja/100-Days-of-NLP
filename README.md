@@ -586,3 +586,14 @@ Once you provide the algorithm with the number of topics, all it does it to rear
 20 Newsgroup dataset was used and only the articles are provided to identify the topics. Topic Modelling algorithms will provide for each topic what are the important words. It is upto us to infer the topic name.
 
 ![lda](assets/images/applications/clustering/lda_vis.png)
+
+### Day 65: Improved Topic Identification in News using LDA
+
+Choosing the number of topics is a difficult job in Topic Modelling. In order to choose the optimal number of topics, grid search is performed on various hypermeters. In order to choose the best model the model having the best perplexity score is choosed.
+
+A good topic model will have non-overlapping, fairly big sized blobs for each topic. 
+
+![lda](assets/images/applications/clustering/lda_imp.png)
+
+- LDA using scikit-learn is implemented.
+- Inference (predicting the topic of a given sentence) is also implemented.

@@ -42,3 +42,17 @@ Once you provide the algorithm with the number of topics, all it does it to rear
 
 - [LDA](https://github.com/graviraja/100-Days-of-NLP/tree/master/architectures#topic-modelling-using-ldaipynb)
 - [Machinelearningplus blog on LDA](https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/)
+
+## Improved Topic Identification in News using LDA.ipynb
+
+Choosing the number of topics is a difficult job in Topic Modelling. In order to choose the optimal number of topics, grid search is performed on various hypermeters. In order to choose the best model the model having the best perplexity score is choosed.
+
+A good topic model will have non-overlapping, fairly big sized blobs for each topic. 
+
+![lda](../../../assets/images/applications/clustering/lda_imp.png)
+
+- LDA using scikit-learn is implemented.
+- Inference (predicting the topic of a given sentence) is also implemented.
+
+#### Resources
+- [Machinelearningplus blog on LDA](https://www.machinelearningplus.com/nlp/topic-modeling-python-sklearn-examples/)
