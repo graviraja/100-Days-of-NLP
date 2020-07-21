@@ -597,3 +597,13 @@ A good topic model will have non-overlapping, fairly big sized blobs for each to
 
 - LDA using scikit-learn is implemented.
 - Inference (predicting the topic of a given sentence) is also implemented.
+
+### Day 66: Covid article finding using LDA
+
+Finding the relevant article from a covid-19 research article [corpus of 50K+ documents](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge) using LDA is explored.
+
+The documents are first clustered into different topics using LDA. For a given query, dominant topic will be found using the trained LDA. Once the topic is found, most relevant articles will be fetched using the `jensenshannon` distance.
+
+Only abstracts are used for the LDA model training. LDA model was trained using 35 topics.
+
+![lda](assets/images/applications/clustering/covid_lda.png)
