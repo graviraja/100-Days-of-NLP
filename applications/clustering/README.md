@@ -32,6 +32,18 @@ A good topic model will have non-overlapping, fairly big sized blobs for each to
 - LDA using scikit-learn is implemented.
 - Inference (predicting the topic of a given sentence) is also implemented.
 
+## Improved Topic Identification in News using LSA.ipynb
+
+We would clearly expect that the words that appear most frequently in one topic would appear less frequently in the other - otherwise that word wouldn't make a good choice to separate out the two topics. Therefore, we expect the topics to be `orthogonal`.
+
+Latent Semantic Analysis (LSA) uses SVD. You will sometimes hear topic modelling referred to as LSA.
+
+The SVD algorithm factorizes a matrix into one matrix with `orthogonal columns` and one with `orthogonal rows` (along with a diagonal matrix, which contains the relative importance of each factor).
+
+Notes:
+- SVD is a determined dimension reduction algorithm
+- LDA is a probability-based generative model
+
 ## Covid article finding using LDA.ipynb
 
 Finding the relevant article from a covid-19 research article [corpus of 50K+ documents](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge) using LDA is explored.

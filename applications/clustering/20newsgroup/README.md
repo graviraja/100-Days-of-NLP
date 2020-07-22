@@ -56,3 +56,25 @@ A good topic model will have non-overlapping, fairly big sized blobs for each to
 
 #### Resources
 - [Machinelearningplus blog on LDA](https://www.machinelearningplus.com/nlp/topic-modeling-python-sklearn-examples/)
+
+
+## Topic Identification in News using LSA.ipynb
+
+We would clearly expect that the words that appear most frequently in one topic would appear less frequently in the other - otherwise that word wouldn't make a good choice to separate out the two topics. Therefore, we expect the topics to be `orthogonal`.
+
+Latent Semantic Analysis (LSA) uses SVD. You will sometimes hear topic modelling referred to as LSA.
+
+The SVD algorithm factorizes a matrix into one matrix with `orthogonal columns` and one with `orthogonal rows` (along with a diagonal matrix, which contains the relative importance of each factor).
+
+![svd](../../../assets/images/applications/clustering/svd.png)
+
+Notes:
+- SVD is a determined dimension reduction algorithm
+- LDA is a probability-based generative model
+
+*Personal Opinion: Though LDA is computationally expensive, the topics (keywords) provided by it are better than LSA.*
+
+#### Resources
+- [SVD Tutorial by Rachel Thomas](https://www.youtube.com/watch?v=tG3pUwmGjsc&list=PLtmWHNX-gukKocXQOkQjuVxglSDYWsSh9&index=2)
+- [Image reference](https://research.fb.com/fast-randomized-svd/)
+- [Analyticsvidhya blog post on LSA](https://www.analyticsvidhya.com/blog/2018/10/stepwise-guide-topic-modeling-latent-semantic-analysis)
