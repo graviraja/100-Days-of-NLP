@@ -184,3 +184,21 @@ Resources:
 - [Towardsdatascience blog on LDA](https://towardsdatascience.com/topic-modeling-and-latent-dirichlet-allocation-in-python-9bf156893c24)
 - [Analyticsvidhya blog on LDA](https://www.analyticsvidhya.com/blog/2016/08/beginners-guide-to-topic-modeling-in-python/)
 - [Machinelearningplus blog on LDA](https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/#4whatdoesldado)
+
+## Principal Component Analysis(PCA).ipynb
+
+PCA is fundamentally a dimensionality reduction technique that transforms the columns of a dataset into a new set features. It does this by finding a new set of directions (like X and Y axes) that explain the maximum variability in the data. This new system coordinate axes is called Principal Components (PCs).
+
+![pca](../assets/images/architectures/pca.png)
+
+Practically PCA is used for two reasons:
+
+- **`Dimensionality Reduction`**: The information distributed across a large number of columns is transformed into principal components (PC) such that the first few PCs can explain a sizeable chunk of the total information (variance). These PCs can be used as explanatory variables in Machine Learning models.
+
+- **`Visualize Data`**: Visualising the separation of classes (or clusters) is hard for data with more than 3 dimensions (features). With the first two PCs itself, it’s usually possible to see a clear separation.
+
+Use the following resources to understand how PCA works:
+
+- [PCA video by StatsQuest](https://www.youtube.com/watch?v=FgakZw6K1QQ)
+- [Machinelearningplus blog on PCA](https://www.machinelearningplus.com/machine-learning/principal-components-analysis-pca-better-explained/)
+- [Medium blog on PCA](https://medium.com/@jonathan_hui/machine-learning-singular-value-decomposition-svd-principal-component-analysis-pca-1d45e885e491)
