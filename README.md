@@ -180,6 +180,7 @@ Practically PCA is used for two reasons:
 - **`Dimensionality Reduction`**: The information distributed across a large number of columns is transformed into principal components (PC) such that the first few PCs can explain a sizeable chunk of the total information (variance). These PCs can be used as explanatory variables in Machine Learning models.
 
 - **`Visualize Data`**: Visualising the separation of classes (or clusters) is hard for data with more than 3 dimensions (features). With the first two PCs itself, it’s usually possible to see a clear separation.
+
 Checkout the code in `architectures` folder
 
 <h1 align="center" style="font-size:60px">
