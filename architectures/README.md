@@ -202,3 +202,31 @@ Use the following resources to understand how PCA works:
 - [PCA video by StatsQuest](https://www.youtube.com/watch?v=FgakZw6K1QQ)
 - [Machinelearningplus blog on PCA](https://www.machinelearningplus.com/machine-learning/principal-components-analysis-pca-better-explained/)
 - [Medium blog on PCA](https://medium.com/@jonathan_hui/machine-learning-singular-value-decomposition-svd-principal-component-analysis-pca-1d45e885e491)
+
+
+## Naive Bayes.ipynb
+
+A Naive Bayes classifier is a probabilistic machine learning model that’s used for classification task. The crux of the classifier is based on the Bayes theorem.
+
+![naive](../assets/images/architectures/naive_bayes.png)
+
+Using Bayes theorem, we can find the probability of A happening, given that B has occurred. Here, B is the evidence and A is the hypothesis. The assumption made here is that the predictors/features are independent. That is presence of one particular feature does not affect the other. Hence it is called naive.
+
+**Types of Naive Bayes Classifier**:
+
+`Multinomial Naive Bayes`:
+This is mostly used when the variables are discrete (like words). The features/predictors used by the classifier are the frequency of the words present in the document.
+
+`Gaussian Naive Bayes`:
+When the predictors take up a continuous value and are not discrete, we assume that these values are sampled from a gaussian distribution.
+
+`Bernoulli Naive Bayes`:
+This is similar to the multinomial naive bayes but the predictors are boolean variables. The parameters that we use to predict the class variable take up only values yes or no, for example if a word occurs in the text or not.
+
+Using 20newsgroup dataset, naive bayes algorithm is explored to do the classification.
+
+Resources:
+
+- [Multinomial Naive Bayes video by StatQuest](https://www.youtube.com/watch?v=O2L2Uv9pdDA)
+- [Gaussian Naive Bayes video by StatQuest](https://www.youtube.com/watch?v=H3EjCKtlVog)
+- [Machinelearningplus blog on Naive Bayes](https://www.machinelearningplus.com/predictive-modeling/how-naive-bayes-algorithm-works-with-example-and-full-code)
