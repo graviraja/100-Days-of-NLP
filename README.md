@@ -181,7 +181,7 @@ Practically PCA is used for two reasons:
 
 - **`Visualize Data`**: Visualising the separation of classes (or clusters) is hard for data with more than 3 dimensions (features). With the first two PCs itself, it’s usually possible to see a clear separation.
 
-## Naive Bayes.ipynb
+### Day 69: Naive Bayes Algorithm
 
 A Naive Bayes classifier is a probabilistic machine learning model that’s used for classification task. The crux of the classifier is based on the Bayes theorem.
 
