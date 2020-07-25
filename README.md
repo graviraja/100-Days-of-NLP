@@ -595,6 +595,14 @@ Email subject generation using T5 model was explored. AESLC dataset was used for
 
 ![email_sub](assets/images/applications/generation/email_sub.png)
 
+### Day 70: Basic Image to Latex
+
+An application of image captioning is to convert the the equation present in the image to latex format. Basic Sequence-to-Sequence models is used. CNN is used as encoder and RNN as decoder. Im2latex dataset is used. It contains 100K samples comprising of training, validation and test splits. 
+
+![img_cap](assets/images/applications/generation/im2latex.png)
+
+Generated formulas are not great. Following notebooks will explore techniques to improve it.
+
 Checkout the code in `applications/generation` folder
 
 ## Ranking Based Applications

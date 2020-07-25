@@ -114,6 +114,12 @@ BPE brings the perfect balance between character and word-level hybrid represent
 
 BPE was used in order to tokenize the captions instead of using nltk.
 
+## Basic Image to Latex.ipynb
+
+An application of image captioning is to convert the the equation present in the image to latex format. Basic Sequence-to-Sequence models is used. CNN is used as encoder and RNN as decoder. Im2latex dataset is used. It contains 100K samples comprising of training, validation and test splits. 
+
+Generated formulas are not great. Following notebooks will explore techniques to improve it.
+
 # Text Summarization
 
 Automatic text summarization is the task of producing a concise and fluent summary while preserving key information content and overall meaning

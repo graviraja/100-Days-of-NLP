@@ -66,3 +66,16 @@ Code improvements:
 
 #### Resources
 - [Karapathy image captioning splits](http://cs.stanford.edu/people/karpathy/deepimagesent/caption_datasets.zip)
+
+
+## Basic Image to Latex.ipynb
+
+An application of image captioning is to convert the the equation present in the image to latex format. Basic Sequence-to-Sequence models is used. CNN is used as encoder and RNN as decoder. Im2latex dataset is used. It contains 100K samples comprising of training, validation and test splits. 
+
+![img_cap](../../../assets/images/applications/generation/im2latex.png)
+
+Generated formulas are not great. Following notebooks will explore techniques to improve it.
+
+#### Resources
+- [Image to Latex Dataset](http://lstm.seas.harvard.edu/latex/)
+- [Image Reference](https://guillaumegenthial.github.io/image-to-latex.html)
