@@ -79,3 +79,11 @@ Generated formulas are not great. Following notebooks will explore techniques to
 #### Resources
 - [Image to Latex Dataset](http://lstm.seas.harvard.edu/latex/)
 - [Image Reference](https://guillaumegenthial.github.io/image-to-latex.html)
+
+## Image to Latex with Attention.ipynb
+
+Latex code generation using the attention mechanism is implemented. Instead of the simple average, we use the weighted average across all pixels, with the weights of the important pixels being greater. This weighted representation of the image can be concatenated with the previously generated word at each step to generate the next word of the formula.
+
+![img_cap](../../../assets/images/applications/generation/imgtolatex_attn.png)
+
+*Note: Because of time constraints, model is trained for 5 epcohs. If trained longer the results will be better.*

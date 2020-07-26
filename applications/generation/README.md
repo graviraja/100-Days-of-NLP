@@ -120,6 +120,10 @@ An application of image captioning is to convert the the equation present in the
 
 Generated formulas are not great. Following notebooks will explore techniques to improve it.
 
+## Image to Latex with Attention.ipynb
+
+Latex code generation using the attention mechanism is implemented. Instead of the simple average, we use the weighted average across all pixels, with the weights of the important pixels being greater. This weighted representation of the image can be concatenated with the previously generated word at each step to generate the next word of the formula.
+
 # Text Summarization
 
 Automatic text summarization is the task of producing a concise and fluent summary while preserving key information content and overall meaning
