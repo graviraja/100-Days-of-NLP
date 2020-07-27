@@ -124,6 +124,10 @@ Generated formulas are not great. Following notebooks will explore techniques to
 
 Latex code generation using the attention mechanism is implemented. Instead of the simple average, we use the weighted average across all pixels, with the weights of the important pixels being greater. This weighted representation of the image can be concatenated with the previously generated word at each step to generate the next word of the formula.
 
+## Image to Latex with Beam Search.ipynb
+
+Added beam search in the decoding process. Also added Positional encoding to the input image and learning rate scheduler.
+
 # Text Summarization
 
 Automatic text summarization is the task of producing a concise and fluent summary while preserving key information content and overall meaning
