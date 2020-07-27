@@ -87,3 +87,7 @@ Latex code generation using the attention mechanism is implemented. Instead of t
 ![img_cap](../../../assets/images/applications/generation/imgtolatex_attn.png)
 
 *Note: Because of time constraints, model is trained for 5 epcohs. If trained longer the results will be better.*
+
+## Image to Latex with Beam Search.ipynb
+
+Added beam search in the decoding process. Also added Positional encoding to the input image and learning rate scheduler.
