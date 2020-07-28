@@ -613,6 +613,13 @@ Latex code generation using the attention mechanism is implemented. Instead of t
 
 Added beam search in the decoding process. Also added Positional encoding to the input image and learning rate scheduler.
 
+### Day 73: Image to LaTex Conversion using Streamlit
+
+Converted the Latex formula generation into an app using streamlit.
+
+![latex](assets/images/applications/generation/latex_app.png)
+
+
 Checkout the code in `applications/generation` folder
 
 ## Ranking Based Applications
