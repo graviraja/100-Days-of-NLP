@@ -202,6 +202,23 @@ This is similar to the multinomial naive bayes but the predictors are boolean va
 
 Using 20newsgroup dataset, naive bayes algorithm is explored to do the classification.
 
+### Day 74: Data Augmentation in NLP
+
+In Computer Vision using image data augmentation is a standard practice. This is because trivial operations for images like rotating an image a few degrees or converting it into grayscale doesn’t change its semantics. Whereas in natural language processing (NLP) field, it is hard to augmenting text due to high complexity of language.
+
+Data Augmentation using the following techniques is explored:
+
+- Synonym-based Substitution
+- Antonym-based Substitution
+- Back Translation
+- Text Surface Transformation
+- Random Noise Injection
+- Word Embedding based Substitution
+- Contextual Word Embeddings (BERT family) based Substitution
+
+![aug](assets/images/architectures/augmentation.png)
+
+
 Checkout the code in `architectures` folder
 
 <h1 align="center" style="font-size:60px">
