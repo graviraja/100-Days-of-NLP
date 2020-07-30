@@ -696,3 +696,16 @@ The documents are first clustered into different topics using LDA. For a given q
 Only abstracts are used for the LDA model training. LDA model was trained using 35 topics.
 
 ![lda](assets/images/applications/clustering/covid_lda.png)
+
+
+## Question Answering based Applications in NLP
+
+### Day 75: Basic Question Answering with Dynamic Memory Networks
+
+Dynamic Memory Network (DMN) is a neural network architecture which processes input sequences and questions, forms episodic memories, and generates relevant answers.
+
+![dmn](assets/images/applications/question-answering/dmn.png)
+
+Dataset used is bAbI which has 20 tasks with an amalgamation of inputs, queries and answers. See the following figure for sample.
+
+![babi](assets/images/applications/question-answering/babi.png)
