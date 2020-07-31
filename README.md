@@ -709,3 +709,9 @@ Dynamic Memory Network (DMN) is a neural network architecture which processes in
 Dataset used is bAbI which has 20 tasks with an amalgamation of inputs, queries and answers. See the following figure for sample.
 
 ![babi](assets/images/applications/question-answering/babi.png)
+
+### Day 76: Question Answering using DMN Plus
+
+The main difference between DMN+ and DMN is the improved InputModule for calculating the facts from input sentences keeping in mind the exchange of information between input sentences using a Bidirectional GRU and a improved version of MemoryModule using Attention based GRU model.
+
+![dmn](assets/images/applications/question-answering/dmn_plus.png)
