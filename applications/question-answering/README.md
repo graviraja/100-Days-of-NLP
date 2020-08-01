@@ -61,6 +61,11 @@ language question about the image, the task is to provide an accurate natural la
 
 The model uses a two layer LSTM to encode the questions and the last hidden layer of VGGNet to encode the images. The image features are then l_2 normalized. Both the question and image features are transformed to a common space and fused via element-wise multiplication, which is then passed through a fully connected layer followed by a softmax layer to obtain a distribution over answers.
 
+Some sample results:
+
+![vqa](../../assets/images/applications/question-answering/vqa_1.png)
+![vqa](../../assets/images/applications/question-answering/vqa_2.png)
+
 *Note*:
 - The dataset used is very small (6794) instances for training.
 - The dataset contains only indoor scenes with, sometimes, lightning conditions that make it difficult to answer the questions. In fact, evaluation on humans shows an accuracy of 50.2%.
