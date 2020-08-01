@@ -6,10 +6,6 @@ There are many question answering based problems in NLP like open domain questio
 
 **Note: Please raise an issue for any suggestions, corrections, and feedback.**
 
-# Textual Question Answering
-
-In this class, we will look into textual based question answering applications.
-
 ## Basic Question Answering with Dynamic Memory Networks.ipynb
 
 Dynamic Memory Network (DMN) is a neural network architecture which processes input sequences and questions, forms episodic memories, and generates relevant answers.
@@ -37,7 +33,7 @@ Dataset used is bAbI which has 20 tasks with an amalgamation of inputs, queries 
 - [Code reference](https://github.com/DSKSD/DeepNLP-models-Pytorch)
 
 
-### Question Answering using DMN Plus.ipynb
+## Question Answering using DMN Plus.ipynb
 
 The main difference between DMN+ and DMN is the improved InputModule for calculating the facts from input sentences keeping in mind the exchange of information between input sentences using a Bidirectional GRU and a improved version of MemoryModule using Attention based GRU model.
 
@@ -53,3 +49,27 @@ The main difference between DMN+ and DMN is the improved InputModule for calcula
 #### References
 - [DMN+ Paper](https://arxiv.org/pdf/1603.01417.pdf)
 - [Reference Code](https://github.com/dandelin/Dynamic-memory-networks-plus-Pytorch/)
+
+
+## Basic Visual Question Answering.ipynb
+
+Visual Question Answering (VQA) is the task of given an image and a natural
+language question about the image, the task is to provide an accurate natural language answer.
+
+
+![vqa](../../assets/images/applications/question-answering/basic_vqa.png)
+
+The model uses a two layer LSTM to encode the questions and the last hidden layer of VGGNet to encode the images. The image features are then l_2 normalized. Both the question and image features are transformed to a common space and fused via element-wise multiplication, which is then passed through a fully connected layer followed by a softmax layer to obtain a distribution over answers.
+
+*Note*:
+- The dataset used is very small (6794) instances for training.
+- The dataset contains only indoor scenes with, sometimes, lightning conditions that make it difficult to answer the questions. In fact, evaluation on humans shows an accuracy of 50.2%.
+- Purpose of the code is to explore VQA not the accuracy.
+- [VisualQA](https://visualqa.org/) site contains more comprehensive datasets which are in order of GB's. Since I don't have the compute power, I explored using a small dataset.
+
+#### Resources
+- [Visual Question Answering Paper](https://arxiv.org/pdf/1505.00468.pdf)
+- [DAQUAR dataset](https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/research/vision-and-language/visual-turing-challenge/)
+- [Introduction to Visual Question Answering & Datasets](https://tryolabs.com/blog/2018/03/01/introduction-to-visual-question-answering/)
+- [Visual Question Answering Overview Video](https://www.youtube.com/watch?v=ElZADFTer4I)
+- [Reference code](https://github.com/tbmoon/basic_vqa)

@@ -715,3 +715,12 @@ Dataset used is bAbI which has 20 tasks with an amalgamation of inputs, queries 
 The main difference between DMN+ and DMN is the improved InputModule for calculating the facts from input sentences keeping in mind the exchange of information between input sentences using a Bidirectional GRU and a improved version of MemoryModule using Attention based GRU model.
 
 ![dmn](assets/images/applications/question-answering/dmn_plus.png)
+
+### Day 77: Basic Visual Question Answering
+
+Visual Question Answering (VQA) is the task of given an image and a natural
+language question about the image, the task is to provide an accurate natural language answer.
+
+![vqa](assets/images/applications/question-answering/basic_vqa.png)
+
+The model uses a two layer LSTM to encode the questions and the last hidden layer of VGGNet to encode the images. The image features are then l_2 normalized. Both the question and image features are transformed to a common space and fused via element-wise multiplication, which is then passed through a fully connected layer followed by a softmax layer to obtain a distribution over answers.
