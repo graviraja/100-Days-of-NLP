@@ -100,5 +100,12 @@ with tanh activation to project the local regional vectors to the textual featur
 
 - `Input fusion layer`: The main function of this layer is to allow the interaction between different input regions to exchange information not only in the forward direction but also in the backward direction i.e., information from future states flowing backwards using a Bidirectional GRU module. Without global information, their representational power is quite limited, with simple issues like object scaling or locational variance causing accuracy problems.
 
+Some sample results:
+
+![vqa](../../assets/images/applications/question-answering/vqa_d1.png)
+![vqa](../../assets/images/applications/question-answering/vqa_d2.png)
+
+As we can see the results are more accurate compared to basic vqa.
+
 #### References
 - [DMN+ Paper](https://arxiv.org/pdf/1603.01417.pdf)
