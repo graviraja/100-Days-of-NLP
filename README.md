@@ -724,3 +724,14 @@ language question about the image, the task is to provide an accurate natural la
 ![vqa](assets/images/applications/question-answering/basic_vqa.png)
 
 The model uses a two layer LSTM to encode the questions and the last hidden layer of VGGNet to encode the images. The image features are then l_2 normalized. Both the question and image features are transformed to a common space and fused via element-wise multiplication, which is then passed through a fully connected layer followed by a softmax layer to obtain a distribution over answers.
+
+### Day78: Visual Question Answering with DMN Plus
+
+To apply the DMN to visual question answering, input module is modified for images. The module splits an image into small local regions and considers each region equivalent to a sentence in the input module for text.
+
+The input module for VQA is composed of three parts, illustrated in below fig: 
+- local region feature extraction
+- visual feature embedding
+- input fusion layer
+
+![vqa](assets/images/applications/question-answering/vqa_dmn_plus.png)

@@ -35,7 +35,10 @@ Dataset used is bAbI which has 20 tasks with an amalgamation of inputs, queries 
 
 ## Question Answering using DMN Plus.ipynb
 
-The main difference between DMN+ and DMN is the improved InputModule for calculating the facts from input sentences keeping in mind the exchange of information between input sentences using a Bidirectional GRU and a improved version of MemoryModule using Attention based GRU model.
+To apply the DMN to visual question answering, input module is modified for images. The module splits an image into small local regions and considers each region equivalent to a sentence in the input module for text. The input module for VQA is composed of three parts, illustrated in below fig:
+- local region feature extraction
+- visual feature embedding
+- input fusion layer
 
 ![dmn](../../assets/images/applications/question-answering/dmn_plus.png)
 
@@ -78,3 +81,31 @@ Some sample results:
 - [Introduction to Visual Question Answering & Datasets](https://tryolabs.com/blog/2018/03/01/introduction-to-visual-question-answering/)
 - [Visual Question Answering Overview Video](https://www.youtube.com/watch?v=ElZADFTer4I)
 - [Reference code](https://github.com/tbmoon/basic_vqa)
+
+## Visual Question Answering with DMN Plus.ipynb
+
+To apply the DMN to visual question answering, input module is modified for images. The module splits an image into small local regions and considers each region equivalent to a sentence in the input module for text.
+
+The input module for VQA is composed of three parts, illustrated in below fig: 
+- local region feature extraction
+- visual feature embedding
+- input fusion layer
+
+![vqa](../../assets/images/applications/question-answering/vqa_dmn_plus.png)
+
+- `Local region feature extraction`: To extract features from the image, we use a convolutional neural network based upon the VGG-19 model. We first rescale the input image to 448 × 448 and take the output from the last pooling layer which has dimensionality d = 512 × 14 × 14. The pooling layer divides the image into a grid of 14 × 14, resulting in 196 local regional vectors of d = 512.
+
+- `Visual feature embedding`: As the VQA task involves both image features and text features, we add a linear layer
+with tanh activation to project the local regional vectors to the textual feature space used by the question vector q.
+
+- `Input fusion layer`: The main function of this layer is to allow the interaction between different input regions to exchange information not only in the forward direction but also in the backward direction i.e., information from future states flowing backwards using a Bidirectional GRU module. Without global information, their representational power is quite limited, with simple issues like object scaling or locational variance causing accuracy problems.
+
+Some sample results:
+
+![vqa](../../assets/images/applications/question-answering/vqa_d1.png)
+![vqa](../../assets/images/applications/question-answering/vqa_d2.png)
+
+As we can see the results are more accurate compared to basic vqa.
+
+#### References
+- [DMN+ Paper](https://arxiv.org/pdf/1603.01417.pdf)
