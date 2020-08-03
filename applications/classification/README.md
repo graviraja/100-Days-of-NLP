@@ -135,3 +135,13 @@ BERT obtains new state-of-the-art results on eleven natural language processing 
 
 - Student Model: Distilbert base uncased
 - Teacher Model: Bert base uncased
+
+# NER Tagging
+
+Named-Entity-Recognition (NER) tagging, is a task of labelling each word in a sentence with its appropriate entity.
+
+## NER tagging with BiLSTM.ipynb
+
+This code covers the basic workflow. We'll see how to: load data, create train/test/validation splits, build a vocabulary, create data iterators, define a model and implement the train/evaluate/test loop and train, test the model.
+
+The model used is a Bi-directional LSTM network
