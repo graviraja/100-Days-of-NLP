@@ -431,6 +431,16 @@ Following experiments have been tried:
 - Training using Distilbert Model (without teacher forcing). Acc: `82.54`, MCC: `57`
 - Training using Distilbert Model (with teacher forcing). Acc: `82.92`, MCC: `57.9`
 
+### Day 79: NER tagging with BiLSTM
+
+Named-Entity-Recognition (NER) tagging, is a task of labelling each word in a sentence with its appropriate entity.
+
+This code covers the basic workflow. We'll see how to: load data, create train/test/validation splits, build a vocabulary, create data iterators, define a model and implement the train/evaluate/test loop and train, test the model.
+
+The model used is Bi-directional LSTM network
+
+![ner](assets/images/applications/classification/ner_lstm.png)
+
 Checkout the code in `applications/classification` folder
 
 ## Generation based Applications
