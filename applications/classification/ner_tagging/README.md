@@ -49,11 +49,11 @@ Probability of a tag depends on the input and previously predicted token:
 
 ![ner](../../../assets/images/applications/classification/bilstm_crf.png)
 
-For decoding, `Vitebri` algorithm is used.
+For decoding, `Viterbi` algorithm is used.
 
 Since we're using CRFs, we're not so much predicting the right label at each word as we are predicting the right label sequence for a word sequence. Viterbi Decoding is a way to do exactly this – find the most optimal tag sequence from the scores computed by a Conditional Random Field.
 
-![ner](../../../assets/images/applications/classification/vitebri.png)
+![ner](../../../assets/images/applications/classification/viterbi.png)
 
 #### Resources
 
