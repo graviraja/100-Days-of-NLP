@@ -49,8 +49,16 @@ Probability of a tag depends on the input and previously predicted token:
 
 ![ner](../../../assets/images/applications/classification/bilstm_crf.png)
 
+For decoding, `Vitebri` algorithm is used.
+
+Since we're using CRFs, we're not so much predicting the right label at each word as we are predicting the right label sequence for a word sequence. Viterbi Decoding is a way to do exactly this – find the most optimal tag sequence from the scores computed by a Conditional Random Field.
+
+![ner](../../../assets/images/applications/classification/vitebri.png)
+
 #### Resources
 
+- [Medium Blog post on CRF (Must read)](https://towardsdatascience.com/implementing-a-linear-chain-conditional-random-field-crf-in-pytorch-16b0b9c4b4ea)
 - [BiLSTM - CRF model paper](https://arxiv.org/pdf/1508.01991.pdf)
 - [CRF Video Explanation](https://www.youtube.com/watch?v=GF3iSJkgPbA)
 - [code reference](https://github.com/Gxzzz/BiLSTM-CRF)
+- [Vitebri decoding](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Sequence-Labeling#viterbi-decoding)
