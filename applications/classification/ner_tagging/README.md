@@ -62,3 +62,15 @@ Since we're using CRFs, we're not so much predicting the right label at each wor
 - [CRF Video Explanation](https://www.youtube.com/watch?v=GF3iSJkgPbA)
 - [code reference](https://github.com/Gxzzz/BiLSTM-CRF)
 - [Vitebri decoding](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Sequence-Labeling#viterbi-decoding)
+
+## NER tagging with Char-BiLSTM-CRF.ipynb
+
+Using sub-word information in our tagging task because it can be a powerful indicator of the tags, whether they're parts of speech or entities. For example, it may learn that adjectives commonly end with "-y" or "-ul", or that places often end with "-land" or "-burg".
+
+Therefore, our sequence tagging model uses both
+
+- `word-level` information in the form of word embeddings.
+- `character-level` information up to and including each word in both directions.
+
+
+![ner](../../../assets/images/applications/classification/char_bilstm_ner.png)
