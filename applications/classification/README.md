@@ -157,3 +157,13 @@ A CRF calculates not only the emission scores but also the `transition scores`, 
 For decoding, `Viterbi` algorithm is used.
 
 Since we're using CRFs, we're not so much predicting the right label at each word as we are predicting the right label sequence for a word sequence. Viterbi Decoding is a way to do exactly this – find the most optimal tag sequence from the scores computed by a Conditional Random Field.
+
+
+## NER tagging with Char-BiLSTM-CRF.ipynb
+
+Using sub-word information in our tagging task because it can be a powerful indicator of the tags, whether they're parts of speech or entities. For example, it may learn that adjectives commonly end with "-y" or "-ul", or that places often end with "-land" or "-burg".
+
+Therefore, our sequence tagging model uses both
+
+- `word-level` information in the form of word embeddings.
+- `character-level` information up to and including each word in both directions.
