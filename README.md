@@ -470,6 +470,13 @@ Therefore, our sequence tagging model uses both
 
 ![ner](assets/images/applications/classification/char_bilstm_ner.png)
 
+### Day 83: Evaluation metrics for NER tagging
+
+Micro and macro-averages (for whatever metric) will compute slightly different things, and thus their interpretation differs. A macro-average will compute the metric independently for each class and then take the average (hence treating all classes equally), whereas a micro-average will aggregate the contributions of all classes to compute the average metric. In a multi-class classification setup, micro-average is preferable if you suspect there might be class imbalance (i.e you may have many more examples of one class than of other classes).
+
+![ner](assets/images/applications/classification/bilstm_crf_res.png)
+
+![ner](assets/images/applications/classification/char_bilstm_crf_res.png)
 
 Checkout the code in `applications/classification` folder
 
