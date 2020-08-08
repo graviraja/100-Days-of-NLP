@@ -478,6 +478,13 @@ Micro and macro-averages (for whatever metric) will compute slightly different t
 
 ![ner](assets/images/applications/classification/char_bilstm_crf_res.png)
 
+### Day 84: NER using Streamlit
+
+Converted the NER tagging into an app using streamlit. The pre-trained model(Char-BiLSTM-CRF) is available now.
+
+![ner](assets/images/applications/classification/ner_app.png)
+
+
 Checkout the code in `applications/classification` folder
 
 ## Generation based Applications
