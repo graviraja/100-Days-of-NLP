@@ -84,3 +84,9 @@ Therefore, our sequence tagging model uses both
 Results:
 
 ![ner](../../../assets/images/applications/classification/char_bilstm_crf_res.png)
+
+## NER tagging with Transformer.ipynb
+
+After trying the RNN approach, POS tagging with Transformer based architecture is explored. Since the Transformer contains both Encoder and Decoder and for the sequence labeling task only `Encoder` will be sufficient. A 3-layer Transformer Encoder model was used.
+
+![ner](../../../assets/images/applications/classification/ner_transformer.png)

@@ -167,3 +167,7 @@ Therefore, our sequence tagging model uses both
 
 - `word-level` information in the form of word embeddings.
 - `character-level` information up to and including each word in both directions.
+
+## NER tagging with Transformer.ipynb
+
+After trying the RNN approach, POS tagging with Transformer based architecture is explored. Since the Transformer contains both Encoder and Decoder and for the sequence labeling task only `Encoder` will be sufficient. A 3-layer Transformer Encoder model was used.
