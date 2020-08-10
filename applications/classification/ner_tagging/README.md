@@ -90,3 +90,10 @@ Results:
 After trying the RNN approach, NER tagging with Transformer based architecture is explored. Since the Transformer contains both Encoder and Decoder and for the sequence labeling task only `Encoder` will be sufficient. A 3-layer Transformer Encoder model was used.
 
 ![ner](../../../assets/images/applications/classification/ner_transformer.png)
+
+
+## NER tagging with BERT.ipynb
+
+After trying NER tagging with Transformer Encoder, NER Tagging with pre-trained `bert-base-cased` model is explored.
+
+![ner](../../../assets/images/applications/classification/ner_bert.png)
