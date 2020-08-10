@@ -87,7 +87,7 @@ Results:
 
 ## NER tagging with Transformer.ipynb
 
-After trying the RNN approach, POS tagging with Transformer based architecture is explored. Since the Transformer contains both Encoder and Decoder and for the sequence labeling task only `Encoder` will be sufficient. A 3-layer Transformer Encoder model was used.
+After trying the RNN approach, NER tagging with Transformer based architecture is explored. Since the Transformer contains both Encoder and Decoder and for the sequence labeling task only `Encoder` will be sufficient. A 3-layer Transformer Encoder model was used.
 
 ![ner](../../../assets/images/applications/classification/ner_transformer.png)
 
