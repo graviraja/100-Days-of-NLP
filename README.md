@@ -497,6 +497,13 @@ After trying NER tagging with Transformer Encoder, NER Tagging with pre-trained 
 ![ner](assets/images/applications/classification/ner_bert.png)
 
 
+### Day 87-88 NER tagging with Transformer-CRF
+
+The transformer alone is not giving good results compared to BiLSTM in the NER tagging task. Augmenting the CRF layer on top of the transformer is implemented which is improving results compared to standalone Transformer.
+
+![ner](assets/images/applications/classification/ner_transformer_crf.png)
+
+
 Checkout the code in `applications/classification` folder
 
 ## Generation based Applications
