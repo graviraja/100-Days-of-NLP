@@ -504,6 +504,20 @@ The transformer alone is not giving good results compared to BiLSTM in the NER t
 ![ner](assets/images/applications/classification/ner_transformer_crf.png)
 
 
+### Day 89: NER tagging with Spacy
+
+SpaCy provides an exceptionally efficient statistical system for NER in python, which can assign labels to groups of tokens. It provides a default model which can recognize a wide range of named or numerical entities, which include person, organization, language, event etc.
+
+
+![ner](assets/images/applications/classification/ner_spacy.png)
+
+Apart from these default entities, spaCy also gives us the liberty to add arbitrary classes to the NER model, by training the model to update it with newer trained examples.
+
+2 new entities called **`ACTIVITY`** and **`SERVICE`** in a specific domain data (bank) are created and trained with few training samples.
+
+![ner](assets/images/applications/classification/ner_spacy_custom.png)
+
+
 Checkout the code in `applications/classification` folder
 
 ## Generation based Applications
