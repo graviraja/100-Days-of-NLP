@@ -277,6 +277,16 @@ BERT obtains new state-of-the-art results on eleven natural language processing 
 
 ![sentiment](assets/images/applications/sentiment/bert_senti.png)
 
+### Day 90: Sentiment Analysis for Code-Mixed Social Media Text
+
+Mixing languages, also known as code-mixing, is a norm in multilingual societies. Multilingual people, who are non-native English speakers, tend to code-mix using English-based phonetic typing and the insertion of anglicisms in their main language.
+
+The task is to predict the sentiment of a given code-mixed tweet. The sentiment labels are positive, negative, or neutral, and the code-mixed languages will be English-Hindi.
+
+![codemix](assets/images/applications/sentiment/codemix_mlp.png)
+
+Using the simple MLP model, `F1 score of 0.58` was achieved on test data
+
 
 ### Day 21: Document Classification with Hierarchical Attention Network
 
