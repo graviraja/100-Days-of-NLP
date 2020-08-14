@@ -26,6 +26,21 @@ Attention helps in focusing on the relevant input when predicting the sentiment 
 
 BERT obtains new state-of-the-art results on eleven natural language processing tasks. Transfer learning in NLP has triggered after the release of BERT model. In this notebook, we will explore how to use BERT for Sentiment Analysis.
 
+# Sentimix: Sentiment Analysis for Code-Mixed Social Media Text
+
+Mixing languages, also known as code-mixing, is a norm in multilingual societies. Multilingual people, who are non-native English speakers, tend to code-mix using English-based phonetic typing and the insertion of anglicisms in their main language.
+
+The task is to predict the sentiment of a given code-mixed tweet. The sentiment labels are positive, negative, or neutral, and the code-mixed languages will be English-Hindi.
+
+Dataset consists of 14,000 training samples and 3,000 test samples.
+
+## Basic Sentimix using MLP.ipynb
+
+This notebook contains: Reading and Parsing the data, Visualization of data, Data Cleaning, Splitting the data into train, val and test splits, Converting the data into numerical format using BoW (Bag of Words), Using a basic Multi-Layer Perceptron model for sentiment classification, Evaluation on test data. 
+
+Using simple MLP model an F1 score of `0.58` was achieved.
+
+
 # Document Classification
 
 ## Document Classification with Hierarchical Attention Network
