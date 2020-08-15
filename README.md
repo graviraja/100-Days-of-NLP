@@ -287,6 +287,13 @@ The task is to predict the sentiment of a given code-mixed tweet. The sentiment 
 
 Using the simple MLP model, `F1 score of 0.58` was achieved on test data
 
+### Day 91: Sentimix using LSTM
+
+After exploring the basic MLP model, the LSTM model was used for sentiment prediction and F1 score of `0.57` was achieved.
+
+![codemix](assets/images/applications/sentiment/codemix_lstm.png)
+
+The results were actually less compared to a basic MLP model. One of the reason might be LSTM is not able to learn the relationships among the words in a sentence due to the highly diverse nature of the Code-mixed data.
 
 ### Day 21: Document Classification with Hierarchical Attention Network
 
