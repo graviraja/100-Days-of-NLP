@@ -40,6 +40,12 @@ This notebook contains: Reading and Parsing the data, Visualization of data, Dat
 
 Using simple MLP model an F1 score of `0.58` was achieved.
 
+## Sentimix using LSTM.ipynb
+
+LSTM model was used for sentiment prediction. An F1 score of `0.57` was achieved.
+
+The results were actually less compared to a basic MLP model. One of the reason might be LSTM is not able to learn the relationships among the words in a sentence due to the highly diverse nature of the Code-mixed data.
+
 
 # Document Classification
 

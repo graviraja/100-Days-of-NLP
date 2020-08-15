@@ -107,3 +107,20 @@ Using the simple MLP model, following metrics were achieved on test data.
 
 - [Semeval 2020 Task 9 Sentimix](https://ritual-uh.github.io/sentimix2020/)
 - [Sentimix dataset](https://github.com/gopalanvinay/thesis-vinay-gopalan)
+
+
+### Sentimix using LSTM.ipynb
+
+LSTM model was used for sentiment prediction. Following metrics were achieved on test data.
+
+- `Precision`: 0.57
+
+- `Recall`: 0.58
+
+- `F1-Score`: 0.57
+
+![codemix](../../../assets/images/applications/sentiment/codemix_lstm.png)
+
+
+The results were actually less compared to a basic MLP model. One of the reason might be LSTM is not able to learn the relationships among the words in a sentence due to the highly diverse nature of the Code-mixed data.
+
