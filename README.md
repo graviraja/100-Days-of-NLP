@@ -295,6 +295,16 @@ After exploring the basic MLP model, the LSTM model was used for sentiment predi
 
 The results were actually less compared to a basic MLP model. One of the reason might be LSTM is not able to learn the relationships among the words in a sentence due to the highly diverse nature of the Code-mixed data.
 
+### Day 92-93: Sentimix with XLM-RoBERTa
+
+As the LSTM is not able to learn the relationships between the words in a code-mixed sentence due to the highly diverse nature of the Code-mixed data and no pre-trained embeddings are used, the F1 score is less.
+
+To alleviate this problem XLM-RoBERTa model (which has been pre-trained on 100 languages) is being used to encode the sentence. In order to use the XLM-RoBERTa model, the sentence needs to be in a proper language. So first the Hinglish words need to be converted to the Hindi (Devanagari) form.
+
+![codemix](assets/images/applications/sentiment/codemix_xlm.png)
+
+An F1 score of `0.59` was achieved. Methods to improve this will be explored later on.
+
 ### Day 21: Document Classification with Hierarchical Attention Network
 
 A Hierarchical Attention Network (HAN) considers the hierarchical structure of documents (document - sentences - words) and includes an attention mechanism that is able to find the most important words and sentences in a document while taking the context into consideration.
