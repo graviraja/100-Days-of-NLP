@@ -124,3 +124,21 @@ LSTM model was used for sentiment prediction. Following metrics were achieved on
 
 The results were actually less compared to a basic MLP model. One of the reason might be LSTM is not able to learn the relationships among the words in a sentence due to the highly diverse nature of the Code-mixed data.
 
+
+### Sentimix with XLM-RoBERTa.ipynb
+
+As the LSTM is not able to learn the relationships between the words in a code-mixed sentence due to the highly diverse nature of the Code-mixed data and no pre-trained embeddings are used, the F1 score is less.
+
+To alleviate this problem XLM-RoBERTa model (which has been pre-trained on 100 languages) is being used to encode the sentence. In order to use the XLM-RoBERTa model, the sentence needs to be in a proper language. So first the Hinglish words need to be converted to the Hindi (Devanagari) form. Then noise (unnecesary tags, urls, etc) is removed.
+
+![codemix](../../../assets/images/applications/sentiment/codemix_xlm.png)
+
+Following metrics were achieved on test data.
+
+- `Precision`: 0.59
+
+- `Recall`: 0.60
+
+- `F1-Score`: 0.59
+
+Methods to improve this will be explored later on.
