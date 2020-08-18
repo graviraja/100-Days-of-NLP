@@ -54,6 +54,13 @@ To alleviate this problem XLM-RoBERTa model (which has been pre-trained on 100 l
 
 An F1 score of `0.59` was achieved. Methods to improve this will be explored later on.
 
+
+### Sentimix with XLM-RoBERTa-LSTM-Attention.ipynb
+
+The final output from XLM-RoBERTa model were used as input embeddings to bi-directional LSTM model. An attention layer, which takes the outputs from LSTM layer, produces a weighted representation of the input, which is then passed through a classifier for predicting the sentiment of the sentence.
+
+An F1 score of `0.64` was achieved.
+
 # Document Classification
 
 ## Document Classification with Hierarchical Attention Network
