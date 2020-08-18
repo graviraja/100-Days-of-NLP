@@ -142,3 +142,23 @@ Following metrics were achieved on test data.
 - `F1-Score`: 0.59
 
 Methods to improve this will be explored later on.
+
+
+### Sentimix with XLM-RoBERTa-LSTM-Attention.ipynb
+
+The final output from XLM-RoBERTa model were used as input embeddings to bi-directional LSTM model. An attention layer, which takes the outputs from LSTM layer, produces a weighted representation of the input, which is then passed through a classifier for predicting the sentiment of the sentence.
+
+![codemix](../../../assets/images/applications/sentiment/codemix_xlm_attn.png)
+
+
+Following metrics were achieved on test data.
+
+- `Precision`: 0.64
+
+- `Recall`: 0.64
+
+- `F1-Score`: 0.64
+
+#### References
+
+- [Google transliterated data](https://github.com/keshav22bansal/BAKSA_IITK)

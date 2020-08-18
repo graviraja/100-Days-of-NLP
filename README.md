@@ -305,6 +305,15 @@ To alleviate this problem XLM-RoBERTa model (which has been pre-trained on 100 l
 
 An F1 score of `0.59` was achieved. Methods to improve this will be explored later on.
 
+### Day 94: Sentimix with XLM-RoBERTa-LSTM-Attention
+
+The final output from XLM-RoBERTa model were used as input embeddings to bi-directional LSTM model. An attention layer, which takes the outputs from LSTM layer, produces a weighted representation of the input, which is then passed through a classifier for predicting the sentiment of the sentence.
+
+![codemix](assets/images/applications/sentiment/codemix_xlm_attn.png)
+
+An F1 score of `0.64` was achieved. 
+
+
 ### Day 21: Document Classification with Hierarchical Attention Network
 
 A Hierarchical Attention Network (HAN) considers the hierarchical structure of documents (document - sentences - words) and includes an attention mechanism that is able to find the most important words and sentences in a document while taking the context into consideration.
