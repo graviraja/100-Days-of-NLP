@@ -162,3 +162,24 @@ Following metrics were achieved on test data.
 #### References
 
 - [Google transliterated data](https://github.com/keshav22bansal/BAKSA_IITK)
+
+
+### Sentimix with XLM-RoBERTA-CNN.ipynb
+
+In the same way that a 3x3 filter can look over a patch of an image, a 1x2 filter can look over a 2 sequential words in a piece of text, i.e. a bi-gram. In this CNN model we will instead use multiple filters of different sizes which will look at the bi-grams (a 1x2 filter), tri-grams (a 1x3 filter) and/or n-grams (a 1xn filter) within the text.
+
+The intuition here is that the appearance of certain bi-grams, tri-grams and n-grams within the review will be a good indication of the final sentiment.
+
+![codemix](../../../assets/images/applications/sentiment/codemix_xlm_cnn.png)
+
+It actually outperforms the LSTM based model. Following metrics were achieved on test data.
+
+- `Precision`: 0.69
+
+- `Recall`: 0.70
+
+- `F1-Score`: 0.69
+
+#### References
+
+- [Convolutional Sentiment Analysis (Must read)](https://github.com/bentrevett/pytorch-sentiment-analysis/blob/master/4%20-%20Convolutional%20Sentiment%20Analysis.ipynb)
