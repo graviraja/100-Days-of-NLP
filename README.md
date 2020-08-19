@@ -313,6 +313,16 @@ The final output from XLM-RoBERTa model were used as input embeddings to bi-dire
 
 An F1 score of `0.64` was achieved. 
 
+### Day 95: Sentimix with XLM-RoBERTA-CNN
+
+In the same way that a 3x3 filter can look over a patch of an image, a 1x2 filter can look over a 2 sequential words in a piece of text, i.e. a bi-gram. In this CNN model we will instead use multiple filters of different sizes which will look at the bi-grams (a 1x2 filter), tri-grams (a 1x3 filter) and/or n-grams (a 1xn filter) within the text.
+
+The intuition here is that the appearance of certain bi-grams, tri-grams and n-grams within the review will be a good indication of the final sentiment.
+
+![codemix](assets/images/applications/sentiment/codemix_xlm_cnn.png)
+
+An F1 score of `0.69` was achieved. 
+
 
 ### Day 21: Document Classification with Hierarchical Attention Network
 
