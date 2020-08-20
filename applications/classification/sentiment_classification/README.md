@@ -199,4 +199,4 @@ Following metrics were achieved on test data.
 
 - `F1-Score`: 0.71
 
-If the test data is same means, with only 5 epochs training, this model is in 5th position in the leaderboard.
+If the test data is the same means, with only 5 epochs training, this model is in the 5th position of the leaderboard.
