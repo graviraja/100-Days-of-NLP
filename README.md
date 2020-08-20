@@ -323,6 +323,14 @@ The intuition here is that the appearance of certain bi-grams, tri-grams and n-g
 
 An F1 score of `0.69` was achieved. 
 
+### Day 96: Sentimix with XLM-RoBERTA-Ensemble
+
+CNN captures the local dependencies where as RNN captures the global dependencies. By combining both we can get better understanding of the data. Ensembling of CNN model and Bidirectional-GRU-Attention model out performs the other ones.
+
+![codemix](assets/images/applications/sentiment/codemix_xlm_ens.png)
+
+An F1 score of `0.71` was achieved. (Top 5 in the leaderboard).
+
 
 ### Day 21: Document Classification with Hierarchical Attention Network
 

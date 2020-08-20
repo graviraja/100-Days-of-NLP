@@ -183,3 +183,20 @@ It actually outperforms the LSTM based model. Following metrics were achieved on
 #### References
 
 - [Convolutional Sentiment Analysis (Must read)](https://github.com/bentrevett/pytorch-sentiment-analysis/blob/master/4%20-%20Convolutional%20Sentiment%20Analysis.ipynb)
+
+
+### Sentimix with XLM-RoBERTA-Ensemble.ipynb
+
+CNN captures the local dependencies where as RNN captures the global dependencies. By combining both we can get better understanding of the data. Ensembling of CNN model and Bidirectional-GRU-Attention model out performs the other ones.
+
+![codemix](../../../assets/images/applications/sentiment/codemix_xlm_ens.png)
+
+Following metrics were achieved on test data.
+
+- `Precision`: 0.71
+
+- `Recall`: 0.72
+
+- `F1-Score`: 0.71
+
+If the test data is the same means, with only 5 epochs training, this model is in the 5th position of the leaderboard.
