@@ -876,3 +876,9 @@ The input module for VQA is composed of three parts, illustrated in below fig:
 - input fusion layer
 
 ![vqa](assets/images/applications/question-answering/vqa_dmn_plus.png)
+
+### Day 96: Boolean Question Answering
+
+Boolean question answering is to answer whether the question has answer present in the given context or not. The BoolQ dataset contains  the queries for complex, non-factoid information, and require difficult entailment-like inference to solve. 
+
+![boolqa](assets/images/applications/question-answering/bool_qa.png)

@@ -109,3 +109,15 @@ As we can see the results are more accurate compared to basic vqa.
 
 #### References
 - [DMN+ Paper](https://arxiv.org/pdf/1603.01417.pdf)
+
+## Boolean Question Answering.ipynb
+
+Boolean question answering is to answer whether the question has answer present in the given context or not. The BoolQ dataset contains  the queries for complex, non-factoid information, and require difficult entailment-like inference to solve. 
+
+![boolqa](../../assets/images/applications/question-answering/bool_qa.png)
+
+Intent of this notebook is to explore the how simply we can build a boolean question answering model.
+
+#### References
+- [BoolQ paper](https://arxiv.org/pdf/1905.10044.pdf)
+- [Thomas Wolf post on using transformers](https://www.linkedin.com/posts/thomas-wolf-a056857_nlp-ai-opensource-activity-6702500587939868672-YLmC)
