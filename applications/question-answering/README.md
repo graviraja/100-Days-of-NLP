@@ -120,7 +120,6 @@ Intent of this notebook is to explore the how simply we can build a boolean ques
 
 #### References
 - [BoolQ paper](https://arxiv.org/pdf/1905.10044.pdf)
-<<<<<<< HEAD
 - [Thomas Wolf post on using transformers](https://www.linkedin.com/posts/thomas-wolf-a056857_nlp-ai-opensource-activity-6702500587939868672-YLmC)
 
 
@@ -156,6 +155,3 @@ SQuAD-v1.1 dataset is used for this purpose
 - [DCN paper](https://arxiv.org/pdf/1611.01604.pdf)
 - [Code reference](https://github.com/richardsfc/coattention-network-QA/)
 - [SQuAD dataset](https://github.com/rajpurkar/SQuAD-explorer)
-=======
-- [Thomas Wolf post on using transformers](https://www.linkedin.com/posts/thomas-wolf-a056857_nlp-ai-opensource-activity-6702500587939868672-YLmC)
->>>>>>> c8e660149daa03caab4ba396cb310cab85acc2b7
