@@ -866,7 +866,7 @@ language question about the image, the task is to provide an accurate natural la
 
 The model uses a two layer LSTM to encode the questions and the last hidden layer of VGGNet to encode the images. The image features are then l_2 normalized. Both the question and image features are transformed to a common space and fused via element-wise multiplication, which is then passed through a fully connected layer followed by a softmax layer to obtain a distribution over answers.
 
-### Day78: Visual Question Answering with DMN Plus
+### Day 78: Visual Question Answering with DMN Plus
 
 To apply the DMN to visual question answering, input module is modified for images. The module splits an image into small local regions and considers each region equivalent to a sentence in the input module for text.
 
@@ -877,8 +877,31 @@ The input module for VQA is composed of three parts, illustrated in below fig:
 
 ![vqa](assets/images/applications/question-answering/vqa_dmn_plus.png)
 
-### Day 96: Boolean Question Answering
+### Day 97: Boolean Question Answering
 
 Boolean question answering is to answer whether the question has answer present in the given context or not. The BoolQ dataset contains  the queries for complex, non-factoid information, and require difficult entailment-like inference to solve. 
 
 ![boolqa](assets/images/applications/question-answering/bool_qa.png)
+
+### Day 98-99: Question Answering using Dynamic-CoAttention-Network
+
+The DCN first fuses co-dependent representations of the question and the document in order to focus on relevant parts of both. Then a dynamic pointing decoder iterates over potential answer spans. This iterative procedure enables the model to recover from initial local maxima corresponding to incorrect answers.
+
+The Dynamic Coattention Network has two major parts: a coattention encoder and a
+dynamic decoder. 
+
+**`CoAttention Encoder`**: The model first encodes the
+given document and question separately via the document and question encoder. The
+document and question encoders are essentially a one-directional LSTM network with one
+layer. Then it passes both the document and question encodings to another encoder which
+computes the `coattention` via matrix multiplications and outputs the coattention encoding
+from another bidirectional LSTM network.
+
+**`Dynamic Decoder`**: Dynamic decoder is also a one-directional
+LSTM network with one layer. The model runs the LSTM network through `several
+iterations`. In each iteration, the LSTM takes in the final hidden state of the LSTM and the
+start and end word embeddings of the answer in the last iteration and outputs a new hidden
+state. Then, the model uses a `Highway Maxout Network` (HMN) to compute the new start
+and end word embeddings of the answer in each iteration.
+
+![dcn](assets/images/applications/question-answering/dcn.png)
