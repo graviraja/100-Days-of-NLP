@@ -905,3 +905,11 @@ state. Then, the model uses a `Highway Maxout Network` (HMN) to compute the new 
 and end word embeddings of the answer in each iteration.
 
 ![dcn](assets/images/applications/question-answering/dcn.png)
+
+### Day 100: Question Answering using Double-Cross-Attention
+
+Double Cross Attention (DCA) seems to provide better results compared to both BiDAF and Dynamic Co-Attention Network (DCN). The motivation behind this approach is that first we pay attention to each context and question and then we attend those attentions with respect to each other in a slightly similar way as DCN. The intuition is that if iteratively read/attend both context and question, it should help us to search for answers easily. 
+
+I have augmented the Dynamic Decoder part from DCN model in-order to have iterative decoding process which helps finding better answer. 
+
+![dca](assets/images/applications/question-answering/dca.png)
